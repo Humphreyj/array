@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import littleLogo from '../assets/img/array-little-logo.PNG';
+import littleLogo from '../../assets/img/array-little-logo.PNG';
 
 
 
@@ -19,7 +20,7 @@ background-color: #121212;
     color: white;
 
     .header {
-        padding: 0 50px;
+        padding-left 130px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -31,10 +32,20 @@ background-color: #121212;
             font-size: 3em;
             margin-left: 25px;
         }
+        nav {
+            margin-left: 25px;
+            a {
+                font-size: 2.8em;
+                margin: 0 40px;
+                text-decoration: none;
+                color: white;
+           
+            }
+        }
     }
   
     .description {
-        padding-left: 50px;
+        padding-left: 130px;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -42,26 +53,28 @@ background-color: #121212;
         width: 40%;
         margin-top:250px;
         .coming-soon {
+            border-radius: 3px;
             padding: 0 10px 5px 10px;
-            font-size: 1.7em;
+            font-size: 3em;
             text-align: center;
-            border: 2px solid white;
-            width: 25%;
+            border: 4px solid white;
+            width: 30%;
             margin: 0;
 
         }
         h1 {
-            font-size: 6em;
+            font-size: 7em;
             margin: 0;
         }
         .sub-title {
             margin-top: 0;
+            font-size: 2.75em;
             margin-bottom: 10px;
         }
         p {
             margin-top: 0;
             font-size: 1.3em;
-            width: 90%;
+            width: 75%;
         }
     }
 }
@@ -76,6 +89,11 @@ const TopLeft = () => {
                 <div className="header">
                     <img src={littleLogo} alt="array logo"/>
                     <h4>array.finance</h4>
+                    <nav>
+                        <Link to='#' className="nav-link">roadmap</Link>
+                        <Link to='#' className="nav-link">faq</Link>
+                        <Link to='/team' className="nav-link">team</Link>
+                    </nav>
                 </div>
 
                 <div className="description">
