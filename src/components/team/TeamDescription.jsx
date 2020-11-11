@@ -6,42 +6,45 @@ import styled from 'styled-components';
 const Description = styled.div`
 display: flex;
 flex-direction: column;
-width: 40%;
-height: 30vh;
-align-items: center;;
-justify-content: center;
+width: 30%;
+height: 70vh;
+align-items: center;
+justify-content: flex-start;
 color: white;
-margin-top: 70px;
+margin-top: 10px;
 
 
 h1 {
     font-size: 6em;
-    margin: 0 0 0 40px;
+    margin: 0;
 }
 .sub-heading {
     font-size: 2em;
-   margin-left: 40px;
     margin-top: 0;
     margin-bottom: 0;
 }
 p {
-    font-size: 1.5em;
-    width: 40%;
-    margin-left: 250px;
+    font-size: 1.6em;
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+    
 }
 .social {
+display: flex;
+flex-direction: column;
+align-items: center;
 position: relative;
-left: 8%;
-top: 95%;
+top: 41%;
+left: 0%;
 color: white;
 .title {
-    font-size: 3em;
+    font-size: 2.5em;
     border: 8px solid white;
     padding: 1px 5px;
 }
 
 .social-links {
-    margin-left: 60px;
     display: flex;
     width: 100%;
     margin-top: 30px;
@@ -68,9 +71,9 @@ const TeamDescription = () => {
             <div className="social">
                 <h1 className="title">follow for updates</h1>
                 <div className="social-links">
-                    <a href="#" className="social-link"><i className="fab fa-twitter"></i></a>
-                    <a href="#" className="social-link"><i className="fab fa-discord"></i></a>
-                    <a href="#" className="social-link"><i className="fab fa-medium"></i></a>
+                <a href="https://twitter.com/" className="social-link"><i className="fab fa-twitter"></i></a>
+                <a href="https://discord.com/" className="social-link"><i className="fab fa-discord"></i></a>
+                <a href="https://medium.com/" className="social-link"><i className="fab fa-medium"></i></a>
                 </div>
             </div>
             

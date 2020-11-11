@@ -9,6 +9,8 @@ align-items: flex-start;
 background-color: #121212;
 margin-top: 40px;
 
+width: 30%;
+
 
 `
 

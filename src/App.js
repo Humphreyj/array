@@ -4,6 +4,7 @@ import styled from 'styled-components';
 //components
 import Splash from './components/splash/Splash';
 import Team from './components/team/Team';
+import Roadmap from './components/roadmap/Roadmap';
 import font from './assets/fonts/TechnaSans-Regular.otf'
 
 const Appy = styled.div`
@@ -14,7 +15,9 @@ const Appy = styled.div`
  
 position: relative;
 width: 100%;
+height: 100vh;
 font-family: ${font}, serif;
+overflow: hidden;
 
 `
 
@@ -23,6 +26,7 @@ function App() {
     <Appy className="App">
       <Route path='/' exact component={Splash} />
       <Route path='/team' component={Team} />
+      <Route path='/roadmap' component={Roadmap} />
       
 
       

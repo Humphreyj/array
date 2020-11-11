@@ -2,9 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SocialDiv = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
 position: relative;
 left: 0;
-top: 41%;
+top: 38%;
 color: white;
 .title {
     font-size: 3em;
@@ -13,7 +16,6 @@ color: white;
 }
 
 .social-links {
-    margin-left: 60px;
     display: flex;
     width: 100%;
     align-items: center;
@@ -31,9 +33,9 @@ const Social = () => {
         <SocialDiv >
             <h1 className="title">follow for updates</h1>
             <div className="social-links">
-                <a href="#" className="social-link"><i className="fab fa-twitter"></i></a>
-                <a href="#" className="social-link"><i className="fab fa-discord"></i></a>
-                <a href="#" className="social-link"><i className="fab fa-medium"></i></a>
+                <a href="https://twitter.com/" className="social-link"><i className="fab fa-twitter"></i></a>
+                <a href="https://discord.com/" className="social-link"><i className="fab fa-discord"></i></a>
+                <a href="https://medium.com/" className="social-link"><i className="fab fa-medium"></i></a>
             </div>
         </SocialDiv>
     );

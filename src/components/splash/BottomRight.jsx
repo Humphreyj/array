@@ -25,16 +25,16 @@ const Right = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
-    left: 35.5%;
-    top: 29%;
+    left: 33.5%;
+    top: 32%;
 
     img {
-    height: 500px;
-    width: 500px;
+    height: 532px;
+    width: 601px;
     }
 
     .logo-subtitle {
-        font-size: 4em;
+        font-size: 3.3em;
         color: white;
         margin: 0;
     }

@@ -90,8 +90,8 @@ const TopLeft = () => {
                     <img src={littleLogo} alt="array logo"/>
                     <h4>array.finance</h4>
                     <nav>
-                        <Link to='#' className="nav-link">roadmap</Link>
-                        <Link to='#' className="nav-link">faq</Link>
+                        <Link to='/roadmap' className="nav-link">roadmap</Link>
+                        <Link to='/faq' className="nav-link">faq</Link>
                         <Link to='/team' className="nav-link">team</Link>
                     </nav>
                 </div>

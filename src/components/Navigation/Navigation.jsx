@@ -8,7 +8,7 @@ import littleLogo from '../../assets/img/array-little-logo.PNG';
 const Nav = styled.div`
     display: flex;
     padding: 0 30px;
-    height: 125px;
+    height: 80px;
     justify-content: flex-start;
     align-items: center;
     background-color: #121212;
@@ -20,6 +20,8 @@ const Nav = styled.div`
     h4 {
         font-size: 3em;
         margin-left: 25px;
+        margin-top: 0;
+
     }
     nav {
         margin-left: 25px;
@@ -42,8 +44,8 @@ const Navigation = () => {
             <img src={littleLogo} alt="array logo"/>
             <nav>
                 <Link to='/' className="nav-link">home</Link>
-                <Link to='#' className="nav-link">roadmap</Link>
-                <Link to='#' className="nav-link">faq</Link>
+                <Link to='/roadmap' className="nav-link">roadmap</Link>
+                <Link to='/faq' className="nav-link">faq</Link>
                 <Link to='/team' className="nav-link">team</Link>
             </nav>
         </Nav>

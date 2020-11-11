@@ -8,10 +8,11 @@ import TeamPhotos from './TeamPhotos';
 
 const TeamDiv = styled.div`
 background-color: #212121;
-height: 100vh;
+height: 95vh;
 display: flex;
 justify-content: center;
 align-items: flex-start;
+
 
 
 `;
