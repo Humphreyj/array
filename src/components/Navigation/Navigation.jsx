@@ -35,6 +35,23 @@ const Nav = styled.div`
         }
     }
 
+    @media(max-width: 970px) {
+        img {
+            height: 40px;
+            width: 40px;
+        }
+        h4 {
+            font-size: 2em;
+        }
+        nav {
+            margin-left: 0px;
+            a {
+                margin: 0 15px;
+                font-size: 2em;
+            }
+        }
+    }
+
 
 `
 
@@ -45,7 +62,7 @@ const Navigation = () => {
             <nav>
                 <Link to='/' className="nav-link">home</Link>
                 <Link to='/roadmap' className="nav-link">roadmap</Link>
-                <Link to='/faq' className="nav-link">faq</Link>
+                {/* <Link to='/faq' className="nav-link">faq</Link> */}
                 <Link to='/team' className="nav-link">team</Link>
             </nav>
         </Nav>

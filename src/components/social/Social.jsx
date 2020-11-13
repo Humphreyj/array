@@ -5,10 +5,11 @@ const SocialDiv = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-position: relative;
-left: 0;
-top: 38%;
+position: absolute;
+left: 43.5%;
+top: 83%;
 color: white;
+z-index: 400;
 .title {
     font-size: 3em;
     border: 8px solid white;
@@ -26,6 +27,42 @@ color: white;
         font-size: 3.3em;
 
     }
+    @media(max-width: 1920px) {
+        left: 44%;
+        top: 79.5%;
+        
+    }
+    //1800px max-width
+    @media(max-width: 1800px) {
+        left: 45%;
+        top: 80%;
+        .title {
+            font-size: 2em;
+        }
+    }
+    //1800px max-width
+    @media(max-width: 1280px) {
+        left: 45%;
+        top: 80%;
+        .title {
+            font-size: 1.8em;
+        }
+        .fab {
+            font-size: 3em;
+        }
+    }
+    //1280px max-width
+    @media(max-width: 970px) {
+        left: 6.5%;
+        top: 80%;
+        .title {
+            font-size: 1.8em;
+        }
+        .fab {
+            font-size: 3em;
+        }
+    }
+    //970px max-width
 `;
 
 const Social = () => {

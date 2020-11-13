@@ -9,10 +9,16 @@ import TeamPhotos from './TeamPhotos';
 const TeamDiv = styled.div`
 background-color: #212121;
 height: 95vh;
+width: 100%;
 display: flex;
 justify-content: center;
 align-items: flex-start;
 
+@media(max-width: 970px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
 
 
 `;
