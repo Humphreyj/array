@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import bigLogo from '../../assets/img/arraylogofinal.png';
 
-import Social from '../social/Social';
 
 
 
