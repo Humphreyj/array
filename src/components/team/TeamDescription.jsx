@@ -14,142 +14,155 @@ color: white;
 margin-top: 10px;
 
 
-h1 {
-    font-size: 8em;
-    margin: 0;
-}
-.sub-heading {
-    font-size: 3em;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-p {
-    font-size: 2em;
-    text-align: center;
-    width: 65%;
-    margin: 20px auto;
-    
-}
-.social {
-display: flex;
-flex-direction: column;
-align-items: center;
-position: relative;
-top: 41%;
-left: 0%;
-color: white;
-.title {
-    font-size: 2.5em;
-    border: 8px solid white;
-    padding: 1px 5px;
-}
-
-.social-links {
-    display: flex;
-    width: 100%;
-    margin-top: 30px;
-    align-items: center;
-    justify-content: space-evenly;
-}
-    .fab {
-        color: white;
-        font-size: 3.3em;
-
-    }
-}
-
-@media(max-width: 1920px) {
-    p {
-        width: 80%;
-    }
-    .social {
-        top: 30%;
-    }
-}
-//max-width: 1920px
-@media(max-width: 1440px) {
     h1 {
-        font-size: 5em;
+        font-size: 8em;
+        margin: 0;
     }
     .sub-heading {
-        font-size: 1.6em;
+        font-size: 3em;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     p {
-        width: 80%;
-        font-size: 1.9em;
-    }
-    .social {
-        top: 30%;
-    }
-}
-//max-width: 1920px
-@media(max-width: 1280px) {
-    h1 {
-        font-size: 4em;
-        margin-top: 15px;
-    }
-    p {
-        width: 85%;
-    }
-    .social {
-        top: 15%;
+        font-size: 2em;
+        text-align: center;
+        width: 65%;
+        margin: 20px auto;
         
-        .title {
-            font-size: 2em;
+    }
+    .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 41%;
+    left: 0%;
+    color: white;
+    .title {
+        font-size: 2.5em;
+        border: 8px solid white;
+        padding: 1px 5px;
+    }
+
+    .social-links {
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+        .fab {
+            color: white;
+            font-size: 3.3em;
+
         }
-        .social-links {
-            .fab {
-                font-size: 2.5em;
+    }
+
+    @media(max-width: 1920px) {
+        p {
+            width: 80%;
+        }
+        .social {
+            top: 30%;
+        }
+    }
+    //max-width: 1920px
+    @media(max-width: 1440px) {
+        h1 {
+            font-size: 5em;
+        }
+        .sub-heading {
+            font-size: 1.6em;
+        }
+        p {
+            width: 80%;
+            font-size: 1.9em;
+        }
+        .social {
+            top: 30%;
+        }
+    }
+    //max-width: 1920px
+    @media(max-width: 1280px) {
+        h1 {
+            font-size: 4em;
+            margin-top: 15px;
+        }
+        p {
+            width: 85%;
+        }
+        .social {
+            top: 15%;
+            
+            .title {
+                font-size: 2em;
+            }
+            .social-links {
+                .fab {
+                    font-size: 2.5em;
+                }
             }
         }
     }
-}
-//max-width: 1280px
-@media(max-width: 970px) {
-    height: 25vh;
-    width: 100%;
-    p {
-        width: 80%;
-    }
-    .social {
-        position: absolute;
-        width: 80%;
-        top: 80%;
-        left: 10%;
-        .title {
-            font-size: 2em;
-            
+    //max-width: 1280px
+    @media(max-width: 970px) {
+        height: 25vh;
+        width: 100%;
+        p {
+            width: 80%;
         }
-        .social-links {
-            width: 70%;
-    
+        .social {
+            position: absolute;
+            width: 80%;
+            top: 80%;
+            left: 10%;
+            .title {
+                font-size: 2em;
+                
+            }
+            .social-links {
+                width: 70%;
+        
+            }
         }
     }
-}
-//max-width: 970px;
+    //max-width: 970px;
 
-@media(max-width: 970px) {
-    height: 25vh;
-    width: 100%;
-    p {
-        width: 80%;
-    }
-    .social {
-        position: absolute;
-        width: 80%;
-        top: 80%;
-        left: 10%;
-        .title {
-            font-size: 2em;
-            
+    @media(max-width: 970px) {
+        height: 25vh;
+        width: 100%;
+        p {
+            width: 80%;
         }
-        .social-links {
-            width: 70%;
-    
+        .social {
+            position: absolute;
+            width: 80%;
+            top: 80%;
+            left: 10%;
+            .title {
+                font-size: 2em;
+                
+            }
+            .social-links {
+                width: 70%;
+        
+            }
         }
     }
+    //max-width: 970px;
 }
-//max-width: 970px;
+    
+@media(max-width: 500px) {
+    height: 65vh;
+    margin-top: 0px;
+    width: 100%;
+    .social {
+        top: 80%;
+        .title {
+            font-size: 1.8em;
+        }
+    }
+    
 }
 
 

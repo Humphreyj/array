@@ -79,6 +79,9 @@ const Right = styled.div`
     width: 90%;
     top: 15%;
 }
+@media(max-width: 500px) {
+    display: none;
+}
 
 `;
 

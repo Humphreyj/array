@@ -215,6 +215,18 @@ position: relative;
             }
         }
     }
+
+    //max-width: 970px;
+    @media(max-width: 500px) {
+        height: 55vh;
+        .social {
+            top: 200%;
+            .title {
+                font-size: 1.8em;
+            }
+        }
+        
+    }
     
     
 

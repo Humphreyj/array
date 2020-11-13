@@ -19,6 +19,10 @@ align-items: flex-start;
     align-items: center;
     justify-content: flex-start;
 }
+@media(max-width: 500px) {
+    height: 100%;
+    padding-bottom: 250px;
+}
 
 
 `;

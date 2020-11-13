@@ -22,6 +22,10 @@ padding-top: 60px;
     align-items: center;
     justify-content: flex-start;
 }
+@media(max-width: 500px) {
+    height: 100%;
+    padding-bottom: 200px;
+}
 
 `;
 

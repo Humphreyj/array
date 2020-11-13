@@ -48,7 +48,12 @@ scrollbar-color: rgba(255, 255, 255, 0.4);
     
 }
 //max-width: 970px
-
+@media(max-width: 500px) {
+    height: 60vh;
+    margin-top: 30px;
+    width: 90%;
+    
+}
 
 `
 

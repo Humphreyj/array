@@ -8,6 +8,11 @@ import Social from '../social/Social';
 const SplashDiv = styled.div`
 position: relative;
 
+@media(max-width: 500px) {
+    overflow-x: scroll;
+    
+}
+
 `
 
 

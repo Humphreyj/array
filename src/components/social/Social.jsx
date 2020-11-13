@@ -63,6 +63,15 @@ z-index: 400;
         }
     }
     //970px max-width
+    @media(max-width: 500px) {
+        top: 75%;
+        left: 11.5%;
+        .social {
+            .social-links {
+                margin-right: 20px;
+            }
+        }
+    }
 `;
 
 const Social = () => {

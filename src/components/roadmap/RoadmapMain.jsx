@@ -69,7 +69,6 @@ p {
     }
 }
 @media(max-width: 1440px) {
-    padding-top: 30px;
     p {
         font-size: 1em;
         width: 90%;
@@ -96,7 +95,6 @@ p {
 }
 //max-width 1440px
 @media(max-width: 1280px) {
-    padding-top: 30px;
     p {
         font-size: 1em;
         width: 90%;
@@ -127,6 +125,10 @@ p {
     height: 40vh;
     overflow-y: scroll;
 
+}
+@media(max-width: 500px) {
+    height: 50vh;
+    
 }
 
 `;
