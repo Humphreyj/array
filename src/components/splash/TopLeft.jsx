@@ -1,12 +1,10 @@
 import React,{useContext} from 'react';
 import UIC from '../../context/Context';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { CSSTransition } from 'react-transition-group';        
-
 import littleLogo from '../../assets/img/arraylogofinal.png';
 
-import Navigation from '../Navigation/Navigation';
+
 
 
 
