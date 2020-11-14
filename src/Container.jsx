@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import UIC from './context/Context';
 import styled from "styled-components";
 import { Switch, Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
@@ -12,44 +13,62 @@ const Wrapper = styled.div`
   height: 100%;
   background-color: rgba(2, 2, 2, .1);
 
-  .fade-enter {
-    transform: translateX(100%);
-    opacity: .1;
-    }
-    .fade-enter.fade-enter-active {
-        transform: translateX(0);
-        opacity: 1;
-        transition: all 300ms ease-in;
-    }
-    .fade-exit {
-        
-        transform:translateX(0);
-        
-    }
-    
-    .fade-exit.fade-exit-active {
-        transform:translateX(-100%);
-        
-        transition: all 300ms ease-in;
-    }
-
-    div.transition-group {
-        position: relative;
-   }
-   section.route-section {
-     
-   }
+  .pageSliderRight-enter {
+    transform: translate3d(-100%, 0, 0);
+  }
+  
+  .pageSliderRight-enter.pageSliderRight-enter-active {
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+  }
+  .pageSliderRight-exit {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .pageSliderRight-exit.pageSliderRight-exit-active {
+    transform: translate3d(-100%, 0, 0);
+    transition: all 600ms;
+  }
+  
+  .pageSliderLeft-enter {
+    transform: translate3d(100%, 0, 0);
+  }
+  
+  .pageSliderLeft-enter.pageSliderLeft-enter-active {
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+  }
+  .pageSliderLeft-exit {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .pageSliderLeft-exit.pageSliderLeft-exit-active {
+    transform: translate3d(100%, 0, 0);
+    transition: all 600ms;
+  }
   
 `;
 
 const Container = ({location}) => {
+  const {routes,page,setPage} = useContext(UIC);
+
+  const currentScreen = routes.indexOf(location.pathname)
+  const previousScreen = page.prev;
+  const animationClasses = currentScreen >= previousScreen ? "pageSliderLeft" : "pageSliderRight";
+  console.log("current",currentScreen, previousScreen)
+ 
     return (
     <Wrapper>
-      <TransitionGroup>
+      <TransitionGroup 
+        childFactory={child =>
+        React.cloneElement(child, {
+          classNames: animationClasses
+        })}
+      >
         <CSSTransition
-          key={location.key}
-          timeout={{ enter: 300, exit: 300 }}
-          classNames={'fade'}
+          key={location.pathname}
+          timeout={{ enter: 400, exit: 400 }}
+          classNames={animationClasses}
         >
         
       <section className="route-section">

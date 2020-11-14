@@ -1,5 +1,5 @@
 import React,{useContext} from 'react';
-import { Link } from 'react-router-dom';
+import { Link,withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 
 import UIC from '../../context/Context';
@@ -84,16 +84,27 @@ const Nav = styled.div`
 `
 
 
-const Navigation = () => {
-    const {toggleSidedrawer,open,page,setPage}=useContext(UIC)
+const Navigation = ({history,location}) => {
+    
+    const {toggleSidedrawer,open,page,setPage,routes}=useContext(UIC)
     const goHome = () => {
-        setPage({...page,home: true, roadmap: false, team: false})
+        setPage({...page,home: true, roadmap: false, team: false,prev:3, curr: 0})
+        history.push({
+            pathname: routes[0],
+        })
+        
     }
     const goRoadmap = () => {
-        setPage({...page,home: false, roadmap: true, team: false})
+        setPage({...page,home: false, roadmap: true, team: false,prev:0,curr: 1})
+        history.push({
+            pathname: routes[1],
+        })
     }
     const goTeam = () => {
-        setPage({...page,home: false, roadmap: false, team: true})
+        setPage({...page,home: false, roadmap: false, team: true,prev:1, curr: 2})
+        history.push({
+            pathname: routes[2],
+        })
     }
     return (
         <Nav className="header">
@@ -112,4 +123,4 @@ const Navigation = () => {
     );
 }
 
-export default Navigation;
+export default withRouter(Navigation);

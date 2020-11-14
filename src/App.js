@@ -66,40 +66,27 @@ background-color: #212121;
   height: 100%;
 }
 
-.fade-enter {
-  transform: translateX(100%);
-}
 
-.fade-enter.fade-enter-active {
-  transform: translateX(0);
-  transition: all 300ms ease-in;
-}
-
-.fade-exit {
-  transform: translateX(-100%);
-}
-
-.fade-exit.fade-exit-active {
-  opacity: 0.01;
-  transition: all 300ms ease-in;
-}
 `;
 
 
 
-function App({location}) {
+function App() {
   const [open, setOpen] =useState(false)
   const [page,setPage] = useState({
     home: true,
     roadmap: false,
-    team: false
+    team: false,
+    prev: 3,
+    curr: 0
   });
+  const routes = ['/','/roadmap','/team'];
 
   const toggleSidedrawer = () => {
     setOpen(!open)
   }
   return (
-    <UIC.Provider value={{toggleSidedrawer,open,page,setPage}}>
+    <UIC.Provider value={{toggleSidedrawer,open,page,setPage, routes}}>
         <Appy className="App">
         <div className={open ? 'sidedrawer open': 'sidedrawer'}>
           <div className='logo'>
