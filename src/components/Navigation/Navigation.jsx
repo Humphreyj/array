@@ -95,13 +95,17 @@ const Navigation = ({history,location}) => {
         
     }
     const goRoadmap = () => {
-        setPage({...page,home: false, roadmap: true, team: false,prev:0,curr: 1})
+        if (page.curr ===2) {
+            setPage({...page,home: false, roadmap: true, team: false,prev:2,curr: 1})
+        }else {
+            setPage({...page,home: false, roadmap: true, team: false,prev:0,curr: 1})
+        }
         history.push({
             pathname: routes[1],
         })
     }
     const goTeam = () => {
-        setPage({...page,home: false, roadmap: false, team: true,prev:1, curr: 2})
+            setPage({...page,home: false, roadmap: false, team: true,prev:1, curr: 2})
         history.push({
             pathname: routes[2],
         })

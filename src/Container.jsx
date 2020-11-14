@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   
   .pageSliderRight-enter.pageSliderRight-enter-active {
     transform: translate3d(0, 0, 0);
-    transition: all 600ms;
+    transition: all 500ms;
   }
   .pageSliderRight-exit {
     transform: translate3d(0, 0, 0);
@@ -54,7 +54,7 @@ const Container = ({location}) => {
 
   const currentScreen = routes.indexOf(location.pathname)
   const previousScreen = page.prev;
-  const animationClasses = currentScreen >= previousScreen ? "pageSliderLeft" : "pageSliderRight";
+  const animationClasses = currentScreen > previousScreen ? "pageSliderLeft" : "pageSliderRight";
   console.log("current",currentScreen, previousScreen)
  
     return (
@@ -67,7 +67,7 @@ const Container = ({location}) => {
       >
         <CSSTransition
           key={location.pathname}
-          timeout={{ enter: 400, exit: 400 }}
+          timeout={{ enter: 1400, exit: 400 }}
           classNames={animationClasses}
         >
         
