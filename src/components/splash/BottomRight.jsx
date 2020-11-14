@@ -24,18 +24,24 @@ const Right = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
-    left: 33.5%;
-    top: 32%;
+    left: 34.5%;
+    top: 26%;
 
         img {
-        width: 25%;
+        width: 18%;
         height: auto;
         }
 
         .logo-subtitle {
-            font-size: 3.3em;
+            font-size: 2.7em;
             color: white;
             margin: 0;
+        }
+        @media(max-width: 1800px) {
+            top: 22%;
+           img {
+               width: 24%;
+           };
         }
         @media(max-width: 1055px) {
             left: 31%;
@@ -43,30 +49,67 @@ const Right = styled.div`
         }
         @media(max-width: 970px) {
             left: 33%;
-            top: 70%;
+            top: 75%;
+            img {
+                width: 18%
+            }
             .logo-subtitle {
                 font-size: 2em;
             }
         }
         //max-width 970px
         @media(max-width: 820px) {
-            top: 58%;
+            top: 62.5%;
             left: 30%;
         }
-        @media(max-width: 768px) {
+        @media(max-width: 800px) {
+            top: 61%;
             left: 30%;
-            top: 60%;
-            
+            img {
+                width: 20%
+            }
         }
-        @media(max-width: 600px) {
-            left: 28%;
-            top: 64%;
-            
+        @media(max-width: 770px) {
+            top: 56.5%;
+            left: 30%;
+            img {
+                width: 24%
+            }
             .logo-subtitle {
                 font-size: 1.5em;
             }
         }
-        //max-width 970px
+
+     
+       
+        @media(max-width: 620px) {
+            left: 28%;
+            top: 62.5%;
+            
+            
+            .logo-subtitle {
+                font-size: 1.4em;
+            }
+        }
+        //max-width 620px
+        @media(max-width: 620px) {
+            left: 28%;
+            top: 62%;
+            img {
+                width: 28%
+            }
+            
+            
+        }
+        //max-width 620px
+        @media(max-width: 600px) {
+        
+            top: 57%;
+            img {
+                width: 24%;
+            }
+        }
+        //max-width: 600px
 
   }
   

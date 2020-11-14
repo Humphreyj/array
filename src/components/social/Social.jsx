@@ -5,14 +5,15 @@ const SocialDiv = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: center;
 position: absolute;
-left: 43.5%;
-top: 83%;
+left: 47%;
+top: 75%;
 color: white;
 z-index: 400;
 .title {
     font-size: 3em;
-    border: 8px solid white;
+    border: 6px solid white;
     padding: 1px 5px;
 }
 
@@ -28,22 +29,37 @@ z-index: 400;
 
     }
     @media(max-width: 1920px) {
-        left: 44%;
-        top: 79.5%;
+        left: 45%;
+        top: 77%;
+        .title {
+            font-size: 2em;
+        }
         
     }
     //1800px max-width
     @media(max-width: 1800px) {
         left: 45%;
-        top: 80%;
-        .title {
-            font-size: 2em;
-        }
+        top: 77.5%;
+        
     }
     //1800px max-width
+    @media(max-width: 1440px) {
+        left: 46.5%;
+        top: 75%;
+        .title {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .social-links {
+        }
+        .fab {
+            font-size: 2.7em;
+        }
+    }
+   //max-width 1440px
     @media(max-width: 1280px) {
-        left: 45%;
-        top: 80%;
+        left: 47%;
+        top: 72%;
         .title {
             font-size: 1.8em;
         }
@@ -54,7 +70,7 @@ z-index: 400;
     //1280px max-width
     @media(max-width: 970px) {
         left: 6.5%;
-        top: 80%;
+        top: 79%;
         .title {
             font-size: 1.8em;
         }
@@ -63,15 +79,35 @@ z-index: 400;
         }
     }
     //970px max-width
-    @media(max-width: 500px) {
-        top: 75%;
-        left: 11.5%;
+
+    @media(max-width: 770px) {
+        top: 77.5%;
+     }
+     //max-width: 768px
+
+    @media(max-width: 600px) {
+        
+        top: 74%;
+        left: 5.5%;
         .social {
             .social-links {
                 margin-right: 20px;
             }
         }
     }
+    //max-width: 600px
+    @media(max-width: 500px) {
+        display: none;
+        top: 75%;
+        left: 22.5%;
+        .social {
+            .social-links {
+                margin-right: 20px;
+            }
+        }
+    }
+    //max-width: 500px
+    
 `;
 
 const Social = () => {

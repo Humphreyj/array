@@ -21,23 +21,28 @@ align-items: flex-start;
 }
 @media(max-width: 500px) {
     height: 100%;
-    padding-bottom: 250px;
+    padding-bottom: 300px;
 }
 
 
+
+`;
+const Wrapper = styled.div`
+  height: 100%;
+  
+ 
 `;
 
 const Team = () => {
     return (
-        <>
-        <Navigation />
+        <Wrapper>
         <TeamDiv>
             <TeamDescription />
             <TeamPhotos />
             
             
         </TeamDiv>
-        </>
+        </Wrapper>
     );
 }
 

@@ -127,9 +127,14 @@ p {
 
 }
 @media(max-width: 500px) {
-    height: 50vh;
+    height: 58vh;
     
 }
+@media(max-width: 320px) {
+    height: 69vh;
+    
+}
+
 
 `;
 

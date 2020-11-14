@@ -28,17 +28,35 @@ padding-top: 60px;
 }
 
 `;
+const Wrapper = styled.div`
+  height: 100%;
+  width: 100%;
+  
+  background-color: #f5f5f5;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin-left: 20px;
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      color: #333;
+    }
+  }
+`;
 
 const Roadmap = () => {
     return (
-        <>
-            <Navigation />
-        <RoadmapContainer>
+        <Wrapper>
+            <RoadmapContainer>
             
             <RoadmapIntro />
             <RoadmapMain />
         </RoadmapContainer>
-        </>
+        </Wrapper>
     );
 }
 

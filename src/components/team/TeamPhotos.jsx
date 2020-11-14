@@ -39,7 +39,7 @@ scrollbar-color: rgba(255, 255, 255, 0.4);
 }
 //max-width: 1440px;
 @media(max-width: 1280px) {
-
+height: 80vh;
 }
 @media(max-width: 970px) {
     width: 80%;
@@ -54,7 +54,18 @@ scrollbar-color: rgba(255, 255, 255, 0.4);
     width: 90%;
     
 }
-
+//max-width 500px
+@media(max-width: 360px) {
+    height: 66vh;
+   
+    
+}
+//max-width: 360px
+@media(max-width: 320px) {
+    height: 80vh;
+    
+}
+//max-width: 320px
 `
 
 const teamData = [

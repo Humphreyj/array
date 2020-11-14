@@ -1,12 +1,13 @@
 import {useState} from 'react';
-import {Route} from 'react-router-dom';
+import {Route,Link,Switch} from 'react-router-dom';
 import styled from 'styled-components';
-import  {Link} from 'react-router-dom';
+
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 //components
-import Splash from './components/splash/Splash';
-import Team from './components/team/Team';
-import Roadmap from './components/roadmap/Roadmap';
+
+import Navigation from './components/Navigation/Navigation';
+import Container from './Container';
 
 import UIC from './context/Context';
 import logo from './assets/img/arraylogofinal.png';
@@ -23,6 +24,7 @@ width: 100%;
 height: 100vh;
 font-family: ${font}, serif;
 overflow: hidden;
+background-color: #212121;
 
 .sidedrawer {
   position: fixed;
@@ -64,33 +66,55 @@ overflow: hidden;
   height: 100%;
 }
 
+.fade-enter {
+  transform: translateX(100%);
+}
+
+.fade-enter.fade-enter-active {
+  transform: translateX(0);
+  transition: all 300ms ease-in;
+}
+
+.fade-exit {
+  transform: translateX(-100%);
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: all 300ms ease-in;
+}
+`;
 
 
-`
 
-function App() {
+function App({location}) {
   const [open, setOpen] =useState(false)
+  const [page,setPage] = useState({
+    home: true,
+    roadmap: false,
+    team: false
+  });
 
   const toggleSidedrawer = () => {
     setOpen(!open)
   }
   return (
-    <UIC.Provider value={{toggleSidedrawer,open}}>
+    <UIC.Provider value={{toggleSidedrawer,open,page,setPage}}>
         <Appy className="App">
         <div className={open ? 'sidedrawer open': 'sidedrawer'}>
           <div className='logo'>
           <img src={logo} alt="array logo"/>
           </div>
           <nav>
-            <Link to='/'>array.finance</Link>
-            <Link to='/roadmap'>roadmap</Link>
-            <Link to='/team'>team</Link>
+            <Link onClick={toggleSidedrawer} to='/'>array.finance</Link>
+            <Link onClick={toggleSidedrawer} to='/roadmap'>roadmap</Link>
+            <Link onClick={toggleSidedrawer} to='/team'>team</Link>
           </nav>
         
         </div>
-        <Route path='/' exact component={Splash} />
-        <Route path='/team' component={Team} />
-        <Route path='/roadmap' component={Roadmap} />
+        <Navigation page={page}/>
+        <Container />
+        
     </Appy>
     </UIC.Provider>
     

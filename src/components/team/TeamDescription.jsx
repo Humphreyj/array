@@ -151,17 +151,92 @@ margin-top: 10px;
     }
     //max-width: 970px;
 }
-    
-@media(max-width: 500px) {
-    height: 65vh;
+
+@media(max-width: 600px) {
+    height: 31vh;
     margin-top: 0px;
     width: 100%;
     .social {
-        top: 80%;
+        top: 84%;
         .title {
             font-size: 1.8em;
         }
     }
+    //max-width: 600px
+
+    @media(max-width: 540px) {
+        height: 42vh;
+        margin-top: 0px;
+        width: 100%;
+        .social {
+            top: 82%;
+            .title {
+                font-size: 1.8em;
+            }
+        }
+        //max-width: 540px
+        //pretty much to explicityly handle the surface duo
+    
+@media(max-width: 500px) {
+    height: 30vh;
+    margin-top: 0px;
+    width: 100%;
+    .social {
+        top: 82%;
+        .title {
+            font-size: 1.8em;
+        }
+    }
+    //max-width: 500px
+
+    @media(max-width: 414px) {
+        height: 56vh;
+        .social {
+            top: 83%;
+            .title {
+                font-size: 1.8em;
+            }
+        }
+        
+    }
+    //max-width: 411px
+    @media(max-width: 380px) {
+        height: 64vh;
+        .social {
+            top: 83%;
+            .title {
+                font-size: 1.8em;
+            }
+        }
+        
+    }
+    //max-width: 380px
+
+    @media(max-width: 360px) {
+        height: 66vh;
+        .social {
+            top: 83%;
+            .title {
+                font-size: 1.8em;
+            }
+        }
+        
+    }
+    //max-width: 360px
+    @media(max-width: 320px) {
+        height: 90vh;
+        .social {
+            top: 83%;
+            .title {
+                font-size: 1.6em;
+            }
+            .social-links {
+                
+            }
+        }
+        
+    }
+    //max-width: 320px
     
 }
 

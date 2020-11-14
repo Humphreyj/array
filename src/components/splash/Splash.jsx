@@ -17,14 +17,20 @@ position: relative;
 
 
 
+
+
+
 const Splash = () => {
     return (
-        <SplashDiv>
+        <>
+            <SplashDiv>
             <TopLeft />
             <BottomRight />
             <Social />
             
         </SplashDiv>
+        </>
+        
     );
 }
 
