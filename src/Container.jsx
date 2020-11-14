@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   
   .pageSliderRight-enter.pageSliderRight-enter-active {
     transform: translate3d(0, 0, 0);
-    transition: all 500ms;
+    transition: all 500ms ease;
   }
   .pageSliderRight-exit {
     transform: translate3d(0, 0, 0);
@@ -27,7 +27,7 @@ const Wrapper = styled.div`
   
   .pageSliderRight-exit.pageSliderRight-exit-active {
     transform: translate3d(-100%, 0, 0);
-    transition: all 600ms;
+    transition: all 600ms ease;
   }
   
   .pageSliderLeft-enter {
@@ -36,7 +36,7 @@ const Wrapper = styled.div`
   
   .pageSliderLeft-enter.pageSliderLeft-enter-active {
     transform: translate3d(0, 0, 0);
-    transition: all 600ms;
+    transition: all 600ms ease ;
   }
   .pageSliderLeft-exit {
     transform: translate3d(0, 0, 0);
@@ -44,7 +44,7 @@ const Wrapper = styled.div`
   
   .pageSliderLeft-exit.pageSliderLeft-exit-active {
     transform: translate3d(100%, 0, 0);
-    transition: all 600ms;
+    transition: all 600ms ease;
   }
   
 `;
@@ -67,7 +67,7 @@ const Container = ({location}) => {
       >
         <CSSTransition
           key={location.pathname}
-          timeout={{ enter: 1400, exit: 400 }}
+          timeout={{ enter: 600, exit: 610 }}
           classNames={animationClasses}
         >
         

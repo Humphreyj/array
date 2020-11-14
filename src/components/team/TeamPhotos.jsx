@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import gavin from '../../assets/img/gavin.png';
+import josh from '../../assets/img/josh.jpg';
+
 
 const Photos = styled.div`
 display: flex;
@@ -92,12 +95,14 @@ const teamData = [
     {
         id: 4,
         name: 'gavin',
-        desc: 'nerd'
+        desc: 'nerd',
+        img: gavin
     },
     {
         id: 5,
-        name: 'spike from cowboy bebop',
-        desc: 'Frontend Developer'
+        name: 'Josh Humphrey',
+        desc: 'Frontend Developer',
+        img: josh
     },
     
 ]
@@ -185,7 +190,7 @@ const TeamPhotos = () => {
             {teamData.map(item => {
                 return (
                     <TeamMember className="team-member">
-                        <img src="#" alt="item.name"/>
+                        <img src={item.img} alt="item.name"/>
                         <div className="team-member-details">
                             <h4>{item.name}</h4>
                             <p>{item.desc}</p>
