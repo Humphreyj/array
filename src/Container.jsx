@@ -50,7 +50,7 @@ const Wrapper = styled.div`
 `;
 
 const Container = ({location}) => {
-  const {routes,page,setPage} = useContext(UIC);
+  const {routes,page} = useContext(UIC);
 
   const currentScreen = routes.indexOf(location.pathname)
   const previousScreen = page.prev;
