@@ -75,7 +75,7 @@ function App() {
   const [open, setOpen] =useState(false)
   const [page,setPage] = useState({
     home: true,
-    roadmap: true,
+    roadmap: false,
     team: false,
     prev: 3,
     curr: 0
