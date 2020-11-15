@@ -16,7 +16,7 @@ margin-top: 10px;
 
     h1 {
         font-size: 8em;
-        margin: 0;
+        margin: 10px 0 0 0;
     }
     .sub-heading {
         font-size: 3em;
@@ -40,7 +40,7 @@ margin-top: 10px;
     color: white;
     .title {
         font-size: 2.5em;
-        border: 8px solid white;
+        border: 4px solid white;
         padding: 1px 5px;
     }
 
@@ -48,12 +48,14 @@ margin-top: 10px;
         display: flex;
         width: 100%;
         margin-top: 30px;
+        margin-right: 10px;
         align-items: center;
         justify-content: space-evenly;
     }
         .fab {
             color: white;
             font-size: 3.3em;
+            margin: 0 20px;
 
         }
     }
@@ -80,6 +82,14 @@ margin-top: 10px;
         }
         .social {
             top: 30%;
+            .title {
+                font-size: 2em;
+            }
+            .social-links {
+                .fab {
+                    font-size: 2.8em;
+                }
+            }
         }
     }
     //max-width: 1920px
@@ -152,7 +162,7 @@ margin-top: 10px;
     //max-width: 970px;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 605px) {
     height: 31vh;
     margin-top: 0px;
     width: 100%;
@@ -165,13 +175,29 @@ margin-top: 10px;
     //max-width: 600px
 
     @media(max-width: 540px) {
-        height: 42vh;
+        height: 23vh;
         margin-top: 0px;
         width: 100%;
+        h1 {
+            font-size: 2.9em;
+            margin-top: 0;
+        }
+        .sub-heading {
+            margin-bottom: 0px;
+        }
+        p {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
         .social {
-            top: 82%;
+            top: 83%;
             .title {
-                font-size: 1.8em;
+                font-size: 1.4em;
+            }
+            .social-links {
+                .fab {
+                    font-size: 1.8em;
+                }
             }
         }
         //max-width: 540px
@@ -230,13 +256,25 @@ margin-top: 10px;
             .title {
                 font-size: 1.6em;
             }
-            .social-links {
-                
-            }
+            
         }
         
     }
     //max-width: 320px
+
+    @media(max-width: 280px) {
+        height: 50vh;
+        
+        .social {
+            top: 83%;
+            .title {
+                font-size: 1.4em;
+            }
+            
+        }
+        
+    }
+    //max-width: 280px
     
 }
 
@@ -253,9 +291,9 @@ const TeamDescription = () => {
             <div className="social">
                 <h1 className="title">follow for updates</h1>
                 <div className="social-links">
-                <a href="https://twitter.com/" className="social-link"><i className="fab fa-twitter"></i></a>
-                <a href="https://discord.com/" className="social-link"><i className="fab fa-discord"></i></a>
-                <a href="https://medium.com/" className="social-link"><i className="fab fa-medium"></i></a>
+                <a href="https://twitter.com/arrayfinance" target='_blank' rel="noreferrer" className="social-link"><i className="fab fa-twitter"></i></a>
+                <a href="https://discord.gg/uNuD4H2rMB" target='_blank' rel="noreferrer" className="social-link"><i className="fab fa-discord"></i></a>
+                <a href="https://medium.com/@arrayfinance" target='_blank' rel="noreferrer" className="social-link"><i className="fab fa-medium"></i></a>
                 </div>
             </div>
             

@@ -13,7 +13,7 @@ color: white;
 z-index: 400;
 .title {
     font-size: 3em;
-    border: 6px solid white;
+    border: 4px solid white;
     padding: 1px 5px;
 }
 
@@ -22,10 +22,12 @@ z-index: 400;
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
+    margin-right: 10px;
 }
     .fab {
         color: white;
         font-size: 3.3em;
+        margin: 0 20px;
 
     }
     @media(max-width: 1920px) {
@@ -115,9 +117,9 @@ const Social = () => {
         <SocialDiv >
             <h1 className="title">follow for updates</h1>
             <div className="social-links">
-                <a href="https://twitter.com/" className="social-link"><i className="fab fa-twitter"></i></a>
-                <a href="https://discord.com/" className="social-link"><i className="fab fa-discord"></i></a>
-                <a href="https://medium.com/" className="social-link"><i className="fab fa-medium"></i></a>
+                <a href="https://twitter.com/arrayfinance" target='_blank' rel="noreferrer" className="social-link"><i className="fab fa-twitter"></i></a>
+                <a href="https://discord.gg/uNuD4H2rMB" target='_blank' rel="noreferrer" className="social-link"><i className="fab fa-discord"></i></a>
+                <a href="https://medium.com/@arrayfinance" target='_blank' rel="noreferrer" className="social-link"><i className="fab fa-medium"></i></a>
             </div>
         </SocialDiv>
     );

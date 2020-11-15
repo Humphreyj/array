@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import gavin from '../../assets/img/gavin.png';
-import josh from '../../assets/img/josh.jpg';
+import zack from '../../assets/img/zack.png';
+import jhump from '../../assets/img/jhump.jpg';
+import joshua from '../../assets/img/Joshua_Headshot.png';
 
 
 const Photos = styled.div`
@@ -79,13 +80,15 @@ const teamData = [
     },
     {
         id: 1,
-        name: 'weeaboo',
-        desc: 'Data  Scientist, Citrix'
+        name: 'Zack Rowland',
+        desc: 'Data  Scientist, Citrix',
+        img: zack
     },
     {
         id: 2,
-        name: 'old man w/ beard',
-        desc: 'Project Manager, previously at Consensys'
+        name: 'Joshua',
+        desc: 'Project Manager, previously at Consensys',
+        img: joshua
     },
     {
         id: 3,
@@ -96,13 +99,13 @@ const teamData = [
         id: 4,
         name: 'gavin',
         desc: 'nerd',
-        img: gavin
+        
     },
     {
         id: 5,
         name: 'Josh Humphrey',
         desc: 'Frontend Developer',
-        img: josh
+        img: jhump
     },
     
 ]
@@ -179,6 +182,10 @@ img {
     }
 }
 //max-width: 1280px
+@media(max-width: 540px) {
+    height: 28vh;
+    
+    //max-width: 540px
 
 
 

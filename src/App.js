@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -85,6 +85,18 @@ function App() {
   const toggleSidedrawer = () => {
     setOpen(!open)
   }
+
+  useEffect(() => {
+    if(localStorage.getItem('route') === 'roadmap') {
+      setPage({...page,home: false, roadmap: true, team: false})
+    }else if(localStorage.getItem('route') === 'team'){
+      setPage({...page,home: false, roadmap: false, team: true})
+    }
+    // eslint-disable-next-line
+  },[])
+
+
+  
   return (
     <UIC.Provider value={{toggleSidedrawer,open,page,setPage, routes}}>
         <Appy className="App">

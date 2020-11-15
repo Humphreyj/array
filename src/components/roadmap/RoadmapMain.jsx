@@ -126,6 +126,12 @@ p {
     overflow-y: scroll;
 
 }
+@media(max-width:540px) {
+    height: 28vh;
+    
+    
+}
+//max-width:540px
 @media(max-width: 500px) {
     height: 58vh;
     

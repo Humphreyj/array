@@ -40,7 +40,7 @@ position: relative;
         color: white;
         .title {
             font-size: 2.5em;
-            border: 8px solid white;
+            border: 4px solid white;
             padding: 1px 5px;
         }
         
@@ -48,12 +48,14 @@ position: relative;
             display: flex;
             width: 100%;
             margin-top: 30px;
+            margin-right: 10px;
             align-items: center;
             justify-content: space-evenly;
         }
             .fab {
                 color: white;
                 font-size: 3.3em;
+                margin: 0 20px;
         
             }
         }
@@ -135,7 +137,7 @@ position: relative;
             color: white;
             .title {
                 font-size: 1.7em;
-                border: 8px solid white;
+                border: 4px solid white;
                 padding: 1px 5px;
             }
     
@@ -146,7 +148,7 @@ position: relative;
             }
     }
     //max-width 1280px
-    @media(max-width: 1180px) {
+    @media(max-width: 1190px) {
         padding-left: 0px;
         padding-right: 50px;
         h1 {
@@ -168,9 +170,7 @@ position: relative;
             color: white;
             .title {
                 font-size: 1.6em;
-                border: 8px solid white;
-                padding: 1px 5px;
-            }
+               
     
             .fab {
                 color: white;
@@ -178,7 +178,7 @@ position: relative;
             }
             }
     }
-    //max-width 1180px
+    //max-width 1190px
     @media(max-width: 970px) {
         
         width: 100%;
@@ -217,6 +217,28 @@ position: relative;
     }
 
     //max-width: 970px;
+    @media(max-width: 600px) {
+        height: 28vh;
+        .social {
+            top: 265%;
+            .title {
+                font-size: 1.8em;
+            }
+        }
+        
+    }
+    //max-width: 600px
+    @media(max-width:540px) {
+        height: 36vh;
+        .social {
+            top: 195%;
+            .title {
+                font-size: 1.8em;
+            }
+        }
+        
+    }
+    //max-width:540px
     @media(max-width: 500px) {
         height: 26vh;
         .social {
@@ -228,8 +250,8 @@ position: relative;
         
     }
     //max-width: 500px
-    @media(max-width: 411px) {
-        height: 37vh;
+    @media(max-width: 414px) {
+        height: 39vh;
         .social {
             top: 280%;
             .title {
@@ -239,10 +261,21 @@ position: relative;
         
     }
     //max-width: 411px
-    @media(max-width: 360px) {
-        height: 36vh;
+    @media(max-width: 377px) {
+        height:45vh;
         .social {
-            top: 280%;
+            top: 245%;
+            .title {
+                font-size: 1.8em;
+            }
+        }
+        
+    }
+    //max-width: 411px
+    @media(max-width: 360px) {
+        height: 53vh;
+        .social {
+            top: 230%;
             .title {
                 font-size: 1.8em;
             }
@@ -266,6 +299,19 @@ position: relative;
         
     }
 
+    @media(max-width: 280px) {
+        height: 55vh;
+        .social {
+            top: 243%;
+            .title {
+                font-size: 1.4em;
+            }
+            
+        }
+        
+    }
+    //max-width: 280px
+
     
 
 `;
@@ -280,9 +326,9 @@ const RoadmapIntro = () => {
             <div className="social">
                 <h1 className="title">follow for updates</h1>
                 <div className="social-links">
-                <a href="https://twitter.com/" className="social-link"><i className="fab fa-twitter"></i></a>
-                <a href="https://discord.com/" className="social-link"><i className="fab fa-discord"></i></a>
-                <a href="https://medium.com/" className="social-link"><i className="fab fa-medium"></i></a>
+                <a href="https://twitter.com/arrayfinance" target='_blank' rel="noreferrer" className="social-link"><i className="fab fa-twitter"></i></a>
+                <a href="https://discord.gg/uNuD4H2rMB" target='_blank' rel="noreferrer" className="social-link"><i className="fab fa-discord"></i></a>
+                <a href="https://medium.com/@arrayfinance" target='_blank' rel="noreferrer" className="social-link"><i className="fab fa-medium"></i></a>
                 </div>
             </div>
             

@@ -43,6 +43,13 @@ const Right = styled.div`
                width: 24%;
            };
         }
+        @media(max-width: 1440px) {
+            top: 25%;
+           img {
+               width: 26%;
+           };
+        }
+        //max-width: 1440px
         @media(max-width: 1055px) {
             left: 31%;
             top: 30%;

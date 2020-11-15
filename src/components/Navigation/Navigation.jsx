@@ -6,82 +6,7 @@ import UIC from '../../context/Context';
 import littleLogo from '../../assets/img/arraylogofinal.png';
 
 
-const Nav = styled.div`
-    display: flex;
-    padding-left: 130px;
-    height: 80px;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #121212;
-    color: white;
-    
-    img {
-        height: 60px;
-        width: 60px;
-    }
-    h4 {
-        font-size: 3em;
-        margin-left: 25px;
-        margin-top: 0;
 
-    }
-    nav {
-        margin-left: 25px;
-        a {
-            font-size: 2.6em;
-            padding: 0px 10px;
-            margin: 0 40px;
-            text-decoration: none;
-            color: white;
-            
-       
-        }
-    }
-    .fas {
-        display: none;
-    }
-    @media(max-width: 2000px) {
-        padding-left: 100px;
-    }
-    //max-width: 2000px
-
-    @media(max-width: 970px) {
-        padding-left: 50px;
-        img {
-            height: 40px;
-            width: 40px;
-        }
-        nav {
-            margin-left: 0px;
-            a {
-                margin: 0 15px;
-                font-size: 2em;
-            }
-        }
-    }
-    @media(max-width: 768px) {
-        justify-content: space-between;
-        padding: 0 15px;
-        nav {
-            display: none;
-        }
-        .fas {
-            display: inline;
-            color: rgba(255,255,255, 0.8);
-            font-size: 2.3em;
-            transition: all 0.3s ease;
-        }
-        .rotate {
-            transform: rotate(90deg);
-        }
-    }
-    
-
-    .bordered {
-        border: 4px solid white;
-    }
-
-`
 
 
 const Navigation = ({history,location}) => {
@@ -131,3 +56,80 @@ const Navigation = ({history,location}) => {
 }
 
 export default withRouter(Navigation);
+const Nav = styled.div`
+    display: flex;
+    padding-left: 130px;
+    height: 80px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #121212;
+    color: white;
+    
+    img {
+        height: 60px;
+        width: 60px;
+    }
+    h4 {
+        font-size: 3em;
+        margin-left: 25px;
+        margin-top: 0;
+
+    }
+    nav {
+        margin-left: 25px;
+        a {
+            font-size: 2.6em;
+            padding: 0px 10px;
+            margin: 0 40px;
+            text-decoration: none;
+            color: white;
+            transition: all 400ms ease-in;
+            
+       
+        }
+    }
+    .fas {
+        display: none;
+    }
+    @media(max-width: 2000px) {
+        padding-left: 100px;
+    }
+    //max-width: 2000px
+
+    @media(max-width: 970px) {
+        padding-left: 50px;
+        img {
+            height: 40px;
+            width: 40px;
+        }
+        nav {
+            margin-left: 0px;
+            a {
+                margin: 0 15px;
+                font-size: 2em;
+            }
+        }
+    }
+    @media(max-width: 768px) {
+        justify-content: space-between;
+        padding: 0 15px;
+        nav {
+            display: none;
+        }
+        .fas {
+            display: inline;
+            color: rgba(255,255,255, 0.8);
+            font-size: 2.3em;
+            transition: all 0.3s ease;
+        }
+        .rotate {
+            transform: rotate(90deg);
+        }
+    }
+    
+
+    .bordered {
+        border: 4px solid white;
+    }
+
+`

@@ -79,6 +79,7 @@ z-index: 200;
         }
         //2000px max-width
         @media(max-width: 1440px ) {
+            padding-top: 14%;
             
             .coming-soon {
                 font-size: 2.4em;
@@ -110,8 +111,8 @@ z-index: 200;
             }
         }
         //1330px
-        @media(max-width: 1220px ) {
-            
+        @media(max-width: 1280px ) {
+            padding-top: 13%;
             .coming-soon {
                 font-size: 2.1em;
                 width: 55%;
@@ -310,9 +311,9 @@ const TopLeft = () => {
                     <div className='mobile-social'>
                             <h1 className="mobile-social-heading">follow for updates</h1>
                             <div className="social-links">
-                                <a href="https://twitter.com/" className="social-link"><i className="fab fa-twitter"></i></a>
-                                <a href="https://discord.com/" className="social-link"><i className="fab fa-discord"></i></a>
-                                <a href="https://medium.com/" className="social-link"><i className="fab fa-medium"></i></a>
+                            <a href="https://twitter.com/arrayfinance" target='_blank' rel="noreferrer" className="social-link"><i className="fab fa-twitter"></i></a>
+                            <a href="https://discord.gg/uNuD4H2rMB" target='_blank' rel="noreferrer" className="social-link"><i className="fab fa-discord"></i></a>
+                            <a href="https://medium.com/@arrayfinance" target='_blank' rel="noreferrer" className="social-link"><i className="fab fa-medium"></i></a>
                             </div>
                         </div>
                 </div>
