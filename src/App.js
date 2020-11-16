@@ -87,10 +87,11 @@ function App() {
   }
 
   useEffect(() => {
-    if(localStorage.getItem('route') === 'roadmap') {
+    if(sessionStorage.getItem('route') === 'roadmap') {
       setPage({...page,home: false, roadmap: true, team: false})
-    }else if(localStorage.getItem('route') === 'team'){
+    }else if(sessionStorage.getItem('route') === 'team'){
       setPage({...page,home: false, roadmap: false, team: true})
+      
     }
     // eslint-disable-next-line
   },[])

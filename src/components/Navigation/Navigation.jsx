@@ -17,7 +17,7 @@ const Navigation = ({history,location}) => {
         history.push({
             pathname: routes[0],
         })
-        localStorage.setItem('route', 'home')
+        sessionStorage.setItem('route', 'home')
         
     }
     const goRoadmap = () => {
@@ -29,14 +29,14 @@ const Navigation = ({history,location}) => {
         history.push({
             pathname: routes[1],
         })
-        localStorage.setItem('route', 'roadmap')
+        sessionStorage.setItem('route', 'roadmap')
     }
     const goTeam = () => {
             setPage({...page,home: false, roadmap: false, team: true,prev:1, curr: 2})
         history.push({
             pathname: routes[2],
         })
-        localStorage.setItem('route','team')
+        sessionStorage.setItem('route','team')
     }
     return (
         <Nav className="header">
