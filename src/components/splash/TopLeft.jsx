@@ -12,7 +12,7 @@ const Left = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 45%;
+    width: 50%;
     padding-left: 3%;
     -webkit-clip-path: polygon(100% 0, 100% 69%, 84% 100%, 0 100%, 0 0);
     clip-path: polygon(100% 0, 100% 69%, 84% 100%, 0 100%, 0 0);
@@ -38,7 +38,7 @@ const Left = styled.div`
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                width: 80%;
+                width: 100%;
                 
                 .coming-soon {
                     border-radius: 3px;
@@ -57,6 +57,7 @@ const Left = styled.div`
                     margin-top: 0;
                     font-size: 2.8em;
                     margin-bottom: 10px;
+                    width: 75%;
                 }
                 p {
                     margin-top: 12px;
@@ -87,7 +88,7 @@ const Left = styled.div`
         }
     }
     @media(max-width: 3800px) {
-        width: 55%;
+        width: 50%;
         .content {
             .description {
                 .coming-soon {
@@ -95,10 +96,10 @@ const Left = styled.div`
                     width: 30%;
                 }
                 h1 {
-                    font-size: 8em;
+                    font-size: 6em;
                 }
                 .sub-title {
-                    font-size: 2.8em;                  
+                    font-size: 2.6em;                  
                 }
                 p {
                     margin-top: 12px;
@@ -125,47 +126,6 @@ const Left = styled.div`
         }
     }
     @media(max-width: 2800px) {
-        width: 60%;
-        .content {
-            .description {
-                .coming-soon {
-                    font-size: 2.8em;
-                    width: 30%;
-                }
-                h1 {
-                    font-size: 8em;
-                }
-                .sub-title {
-                    font-size: 2.8em;                  
-                }
-                p {
-                    margin-top: 12px;
-                    margin-bottom: 0;
-                    font-size: 1.7em;
-                    width: 75%;
-                }
-                    
-            }
-        }
-        .social {
-            width: 30%;
-            .social-heading {
-                border: 3px solid white;
-                text-align: center;
-                font-size: 2.8em;
-            }
-            .social-links {
-                .fab {
-                    font-size: 4em;
-                    
-                }
-            }
-        }
-    }
-    //max-width: 2800px
-
-    @media(max-width: 2556px) {
-        width: 60%;
         .content {
             .description {
                 .coming-soon {
@@ -176,7 +136,47 @@ const Left = styled.div`
                     font-size: 5.5em;
                 }
                 .sub-title {
-                    font-size: 2.4em;                  
+                    font-size: 2.2em;                  
+                }
+                p {
+                    margin-top: 12px;
+                    margin-bottom: 0;
+                    font-size: 1.4em;
+                    width: 75%;
+                }
+                    
+            }
+        }
+        .social {
+            width: 30%;
+            .social-heading {
+                border: 3px solid white;
+                text-align: center;
+                font-size: 2.3em;
+            }
+            .social-links {
+                .fab {
+                    font-size: 3.8em;
+                    
+                }
+            }
+        }
+    }
+    //max-width: 2800px
+
+    @media(max-width: 2556px) {
+       
+        .content {
+            .description {
+                .coming-soon {
+                    font-size: 2.5em;
+                    width: 35%;
+                }
+                h1 {
+                    font-size: 5.5em;
+                }
+                .sub-title {
+                    font-size: 1.9em;                  
                 }
                 p {
                     margin-top: 12px;
@@ -192,11 +192,11 @@ const Left = styled.div`
             .social-heading {
                 border: 3px solid white;
                 text-align: center;
-                font-size: 2.8em;
+                font-size: 2.2em;
             }
             .social-links {
                 .fab {
-                    font-size: 4em;
+                    font-size: 3.5em;
                     
                 }
             }
@@ -205,30 +205,30 @@ const Left = styled.div`
     //max-width: 2556px
 
     @media(max-width: 2200px) {
-        width: 65%;
+        
         .content {
             .description {
                 .coming-soon {
-                    font-size: 2.8em;
+                    font-size: 2.4em;
                     width: 40%;
                 }
                 h1 {
-                    font-size: 5em;
+                    font-size: 3.5em;
                 }
                 .sub-title {
-                    font-size: 2.1em;                  
+                    font-size: 1.8em;                  
                 }
                 p {
                     margin-top: 12px;
                     margin-bottom: 0;
-                    font-size: 1.1em;
+                    font-size: 1em;
                     width: 75%;
                 }
                     
             }
         }
         .social {
-            width: 35%;
+            width: 40%;
             .social-heading {
                 border: 3px solid white;
                 text-align: center;
@@ -245,96 +245,24 @@ const Left = styled.div`
     //max-width: 2200px
 
     @media(max-width: 1990px) {
-        width: 65%;
+        
         .content {
             .description {
                 .coming-soon {
-                    font-size: 2.8em;
+                    font-size: 2.6em;
                     width: 40%;
                 }
                 h1 {
                     
                 }
                 .sub-title {
-                                      
+                    font-size: 2em;                  
                 }
                 p {
-                   ;
-                }
-                    
-            }
-        }
-        .social {
-            width: 40%;
-            .social-heading {
-                border: 3px solid white;
-                text-align: center;
-                font-size: 2.6em;
-            }
-            .social-links {
-                .fab {
-                    font-size: 4em;
-                    
-                }
-            }
-        }
-    }
-    //max-width: 1990px
-
-    @media(max-width: 1800px) {
-        width: 65%;
-        .content {
-            .description {
-                .coming-soon {
-                    font-size: 2.8em;
-                    width: 40%;
-                }
-                h1 {
-                    font-size: 6em;
-                }
-                .sub-title {
-                                      
-                }
-                p {
-                   ;
-                }
-                    
-            }
-        }
-        .social {
-            width: 40%;
-            .social-heading {
-                border: 3px solid white;
-                text-align: center;
-                font-size: 2.6em;
-            }
-            .social-links {
-                .fab {
-                    font-size: 4em;
-                    
-                }
-            }
-        }
-    }
-    //max-width: 1800px
-
-    @media(max-width: 1540px) {
-        width: 65%;
-        .content {
-            .description {
-                .coming-soon {
-                    font-size: 2.2em;
-                    width: 40%;
-                }
-                h1 {
-                    font-size: 5em;
-                }
-                .sub-title {
-                    font-size: 1.5em;
-
-                }
-                p {
-                   font-size: 1.1em;
+                    margin-top: 12px;
+                    margin-bottom: 0;
+                    font-size: 1em;
+                    width: 75%;
                 }
                     
             }
@@ -354,10 +282,10 @@ const Left = styled.div`
             }
         }
     }
-    //max-width: 1540px
+    //max-width: 1990px
 
-    @media(max-width: 1320px) {
-        width: 65%;
+    @media(max-width: 1800px) {
+       
         .content {
             .description {
                 .coming-soon {
@@ -365,7 +293,121 @@ const Left = styled.div`
                     width: 40%;
                 }
                 h1 {
-                    font-size: 4.5em;
+                    font-size: 3.5em;
+                }
+                .sub-title {
+                    font-size: 1.4em;                       
+                }
+                p {
+                    font-size: 1em;
+                }
+                    
+            }
+        }
+        .social {
+            width: 40%;
+            .social-heading {
+                border: 3px solid white;
+                text-align: center;
+                font-size: 2em;
+            }
+            .social-links {
+                .fab {
+                    font-size: 3em;
+                    
+                }
+            }
+        }
+    }
+    //max-width: 1800px
+
+    @media(max-width: 1540px) {
+        
+        .content {
+            .description {
+                .coming-soon {
+                    font-size: 2em;
+                    width: 40%;
+                }
+                h1 {
+                    
+                }
+                .sub-title {
+                    font-size: 1.4em;
+
+                }
+                p {
+                   font-size: 1em;
+                }
+                    
+            }
+        }
+        .social {
+            width: 40%;
+            .social-heading {
+                border: 3px solid white;
+                text-align: center;
+                font-size: 1.9em;
+            }
+            .social-links {
+                .fab {
+                    font-size: 3em;
+                    
+                }
+            }
+        }
+    }
+    //max-width: 1540px
+
+    @media(max-width: 1440px) {
+        
+        .content {
+            .description {
+                .coming-soon {
+                    font-size: 2em;
+                    width: 45%;
+                }
+                h1 {
+                    font-size: 3.5em;
+                }
+                .sub-title {
+                    font-size: 1.2em;
+
+                }
+                p {
+                   font-size: 1em;
+                   width: 90%;
+                }
+                    
+            }
+        }
+        .social {
+            width: 45%;
+            .social-heading {
+                border: 3px solid white;
+                text-align: center;
+                font-size: 1.8em;
+            }
+            .social-links {
+                .fab {
+                    font-size: 3em;
+                    
+                }
+            }
+        }
+    }
+    //max-width: 1440px
+
+    @media(max-width: 1320px) {
+        
+        .content {
+            .description {
+                .coming-soon {
+                    font-size: 1.8em;
+                    
+                }
+                h1 {
+                    font-size: 3em;
                 }
                 .sub-title {
                     font-size: 1.2em;
@@ -382,11 +424,11 @@ const Left = styled.div`
             .social-heading {
                 border: 3px solid white;
                 text-align: center;
-                font-size: 2em;
+                font-size: 1.6em;
             }
             .social-links {
                 .fab {
-                    font-size: 3em;
+                    font-size: 2.5em;
                     
                 }
             }
