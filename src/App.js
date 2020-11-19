@@ -18,10 +18,13 @@ const Appy = styled.div`
   font-family: GraublauWeb;
   src: url("../") format("opentype");
 }
+* {
+  box-sizing: border-box;
+}
  
 position: relative;
 width: 100%;
-height: 100vh;
+height: 100%;
 font-family: ${font}, serif;
 overflow: hidden;
 background-color: #212121;

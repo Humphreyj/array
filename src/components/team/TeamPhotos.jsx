@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import zack from '../../assets/img/zack.png';
 import jhump from '../../assets/img/jhump.jpg';
 import joshua from '../../assets/img/Joshua_Headshot.png';
+import gavin from '../../assets/img/gavin.jpg';
 
 
 const Photos = styled.div`
@@ -98,7 +99,8 @@ const teamData = [
     {
         id: 4,
         name: 'gavin',
-        desc: 'nerd',
+        desc: 'Marketing',
+        img: gavin
         
     },
     {

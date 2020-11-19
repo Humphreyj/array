@@ -58,7 +58,7 @@ const Navigation = ({history,location}) => {
 export default withRouter(Navigation);
 const Nav = styled.div`
     display: flex;
-    padding-left: 130px;
+    padding-left: 3%;
     height: 80px;
     justify-content: flex-start;
     align-items: center;
