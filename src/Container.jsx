@@ -11,7 +11,7 @@ import Team from './components/team/Team';
 
 const Wrapper = styled.div`
   height: 100%;
-  background-color: rgba(2, 2, 2, .1);
+  background-color: #212121;
 
   .pageSliderRight-enter {
     transform: translate3d(-100%, 0, 0);

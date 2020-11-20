@@ -38,6 +38,9 @@ const SplashDiv = styled.div`
             color: white;
             margin: 0;
         }
+        @media(max-width: 1100px) {
+            display: none;
+        }
     }
 
     .chart {
@@ -48,6 +51,9 @@ const SplashDiv = styled.div`
         img {
             width: 40%;
             height: auto;
+            }
+            @media(max-width: 1100px) {
+                display: none;
             }
     }
 
@@ -87,9 +93,9 @@ const Row = styled.div`
     }
 
     &.phase {
-        margin-top: 50px;
+        margin-top: 120px;
         justify-content: center;
-
+        
         .phase-hexagon {
             
             background-color: #121212;
@@ -371,7 +377,6 @@ const Row = styled.div`
         //max-width: 1280px
 
         @media(max-width: 1100px) {
-            
             .phase-hexagon {
                 
                 .phase-text {
@@ -404,11 +409,44 @@ const Row = styled.div`
             }
         }
         //max-width: 1280px
+        @media(max-width: 1100px) {
+            .phase-hexagon {
+                width: 100%;
+                .phase-text {
+                    width: 100%;
+                    h1 {
+                        text-align: center;
+                    }
+                    p {
+                        font-size: .9em;
+                        width: 90%;
+                        text-align: center;
+                    }
+                }
+                .phase-date {
+                    .date-left {
+                        width: 75%;
+                        h1 {
+                            font-size: 1.2em;
+                            margin: 5px 0;
+                        }
+                    }
+                    .date-right {
+                        width: 25%;
+                        h1 {
+                            font-size: 1.2em;
+                            margin: 5px 5%;
+                        }
+                    }                      
+                }
+            }
+        }
     }
     //phase
 
     &.two {
         margin-left: 3%;
+        margin-top: 50px;
         
     }
 `;

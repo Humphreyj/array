@@ -30,6 +30,7 @@ const Right = styled.div`
             font-size: 5.5em;
             width: 70%;
             text-align: right;
+            margin-top: 5px;
             margin-bottom: 0;
         }
         h4 {
@@ -71,7 +72,7 @@ const Right = styled.div`
             flex-direction: column;
             align-items: flex-start;
             h4 {
-                font-size: 4em;
+                font-size: 5em;
                 width: 50%;
             }
         }
@@ -135,7 +136,7 @@ const Right = styled.div`
             .bottom {
                 .bottom-content {
                     h4 {
-                        font-size: 2.8em;
+                        font-size: 5em;
                         width: 60%;
                     }
                 }
@@ -164,7 +165,7 @@ const Right = styled.div`
             .bottom {
                 .bottom-content {
                     h4 {
-                        font-size: 2.8em;
+                        font-size: 4em;
                         width: 60%;
                     }
                 }
@@ -192,7 +193,7 @@ const Right = styled.div`
                 
                 .bottom-content {
                     h4 {
-                        font-size: 2.4em;
+                        font-size: 3.5em;
                         width: 65%;
                     }
                 }
@@ -223,10 +224,10 @@ const Right = styled.div`
                 }
             }
             .bottom {
-                margin-top: -15%;
+                margin-top: -10%;
                 .bottom-content {
                     h4 {
-                        font-size: 2em;
+                        font-size: 3em;
                         width: 65%;
                     }
                 }
@@ -254,7 +255,7 @@ const Right = styled.div`
                 margin-top: -10%;
                 .bottom-content {
                     h4 {
-                        font-size: 1.8em;
+                        font-size: 2.5em;
                         width: 65%;
                     }
                 }
@@ -279,10 +280,10 @@ const Right = styled.div`
                 }
             }
             .bottom {
-                margin-top: -15%;
+                margin-top: -10%;
                 .bottom-content {
                     h4 {
-                        font-size: 1.6em;
+                        font-size: 2em;
                         width: 60%;
                     }
                 }
@@ -290,6 +291,9 @@ const Right = styled.div`
             
         }
         //max-width: 1280px
+        @media(max-width: 1100px) {
+            width: 100%;
+        }
 
   
         
