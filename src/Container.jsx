@@ -1,8 +1,7 @@
-import React,{useContext} from 'react';
-import UIC from './context/Context';
+import React from 'react';
 import styled from "styled-components";
 import { Switch, Route, withRouter } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 //components
 import Splash from './components/splash/Splash';
@@ -57,10 +56,7 @@ const Wrapper = styled.div`
 `;
 
 const Container = ({location}) => {
-  const {routes,page} = useContext(UIC);
 
-  
- 
     return (
     <Wrapper>
       
