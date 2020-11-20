@@ -447,30 +447,30 @@ const Row = styled.div`
     }
     //phase
 
-    &.two {
-        margin-left: 3%;
-        margin-top: 50px;
-        @media(max-width: 1100px) {
-            margin-left: 0;
-        }
+    // &.two {
+    //     margin-left: 3%;
+    //     margin-top: 50px;
+    //     @media(max-width: 1100px) {
+    //         margin-left: 0;
+    //     }
         
-    }
-    &.three {
-        margin-left: 6%;
-        margin-top: 50px;
-        @media(max-width: 1100px) {
-            margin-left: 0;
-        }
+    // }
+    // &.three {
+    //     margin-left: 6%;
+    //     margin-top: 50px;
+    //     @media(max-width: 1100px) {
+    //         margin-left: 0;
+    //     }
         
-    }
-    &.four {
-        margin-left: 9%;
-        margin-top: 50px;
-        @media(max-width: 1100px) {
-            margin-left: 0;
-        }
+    // }
+    // &.four {
+    //     margin-left: 9%;
+    //     margin-top: 50px;
+    //     @media(max-width: 1100px) {
+    //         margin-left: 0;
+    //     }
         
-    }
+    // }
    
 `;
 
