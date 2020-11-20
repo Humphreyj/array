@@ -2,7 +2,7 @@ import React,{useContext} from 'react';
 import UIC from './context/Context';
 import styled from "styled-components";
 import { Switch, Route, withRouter } from "react-router-dom";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+import { AnimatePresence, motion } from "framer-motion";
 
 //components
 import Splash from './components/splash/Splash';
@@ -59,36 +59,22 @@ const Wrapper = styled.div`
 const Container = ({location}) => {
   const {routes,page} = useContext(UIC);
 
-  const currentScreen = routes.indexOf(location.pathname)
-  const previousScreen = page.prev;
-  const animationClasses = currentScreen > previousScreen ? "pageSliderLeft" : "pageSliderRight";
+  
  
     return (
     <Wrapper>
-      <TransitionGroup 
-        childFactory={child =>
-        React.cloneElement(child, {
-          classNames: animationClasses
-        })}
-      >
-        <CSSTransition
-          key={location.pathname}
-          timeout={{ enter: 600, exit: 600 }}
-          classNames={animationClasses}
-        >
-        
-      <section className="route-section">
       
-          <Switch location={location} >
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname} >
             <Route exact path="/" component={Splash} />
             <Route path="/roadmap" component={Roadmap} />
             <Route path="/team" component={Team} />
           </Switch>
+      </AnimatePresence>
+          
         
           
-      </section>
-      </CSSTransition>
-      </TransitionGroup>
+      
             
        
     </Wrapper>

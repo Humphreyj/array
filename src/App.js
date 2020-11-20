@@ -1,5 +1,5 @@
 import {useState,useEffect} from 'react';
-import {Link} from 'react-router-dom';
+import {Link,withRouter} from 'react-router-dom';
 import styled from 'styled-components';
 
 
@@ -74,7 +74,7 @@ background-color: #212121;
 
 
 
-function App() {
+function App({location}) {
   const [open, setOpen] =useState(false)
   const [page,setPage] = useState({
     home: true,
@@ -99,10 +99,68 @@ function App() {
     // eslint-disable-next-line
   },[])
 
+  
+
+  const pageVariants = {
+    initial: {
+      
+      x: "-100%",
+      
+    },
+    in: {
+     
+      x: 0,
+     
+    },
+    out: {
+      
+      x: "100%",
+      
+    }
+  };
+  const pageVariants2 = {
+    initial: {
+      
+      x: "100%",
+      
+    },
+    in: {
+     
+      x: 0,
+     
+    },
+    out: {
+      
+      x: "-100%",
+      
+    }
+  };
+  
+  const pageTransition = {
+    transition: 'linear',
+    duration: .3,
+    
+  };
+  
+  const pageStyle = {
+    position: "static"
+  };
+  const currentScreen = routes.indexOf(location.pathname)
+  const previousScreen = page.prev;
+  const variants = currentScreen > previousScreen ? pageVariants2 : pageVariants;
+
 
   
   return (
-    <UIC.Provider value={{toggleSidedrawer,open,page,setPage, routes}}>
+    <UIC.Provider 
+    value={{toggleSidedrawer,
+            open,
+            page,
+            setPage,
+            routes,
+            variants,
+            pageTransition,
+            pageStyle}}>
         <Appy className="App">
         <div className={open ? 'sidedrawer open': 'sidedrawer'}>
           <div className='logo'>
@@ -125,4 +183,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);

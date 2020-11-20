@@ -1,6 +1,7 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import UIC from '../../context/Context';
 import styled from 'styled-components';
-
+import { motion } from "framer-motion";
 import TopLeft from './TopLeft';
 import BottomRight from './BottomRight';
 import bigLogo from '../../assets/img/logoWithText.PNG';
@@ -480,8 +481,16 @@ const Row = styled.div`
 
 
 const Splash = () => {
+    const {pageStyle,variants,pageTransition} = useContext(UIC);
     return (
-        <>
+        <motion.div
+            style={pageStyle}
+            initial="initial"
+            animate="in"
+            exit="out"
+            variants={variants}
+            transition={pageTransition}
+        >
             <SplashDiv>
                 <Row className='top'>
                     <TopLeft />
@@ -584,7 +593,7 @@ const Splash = () => {
             
             
         </SplashDiv>
-        </>
+        </motion.div>
         
     );
 }

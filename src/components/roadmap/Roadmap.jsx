@@ -1,5 +1,7 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import styled from 'styled-components';
+import UIC from '../../context/Context';
+import { motion } from "framer-motion";
 
 
 import RoadmapIntro from '../roadmap/RoadmapIntro';
@@ -49,14 +51,25 @@ const Wrapper = styled.div`
 `;
 
 const Roadmap = () => {
+  const {pageStyle,variants,pageTransition} = useContext(UIC);
     return (
+      <motion.div
+        style={pageStyle}
+        initial="initial"
+        animate="in"
+        exit="out"
+        variants={variants}
+        transition={pageTransition}
+        >
+
         <Wrapper>
             <RoadmapContainer>
-            
-            <RoadmapIntro />
-            <RoadmapMain />
-        </RoadmapContainer>
+              <RoadmapIntro />
+              <RoadmapMain />
+            </RoadmapContainer>
         </Wrapper>
+        </motion.div>
+        
     );
 }
 

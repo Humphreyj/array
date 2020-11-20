@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {motion} from 'framer-motion';
 
 
 
@@ -303,27 +304,30 @@ const Right = styled.div`
 
 const BottomRight = () => {
     return (
-        <Right>
-            <div className="top">
-                <div className="top-content">
-                    <h1>Array is the ultimate DeFi protocol.</h1>
-                    <h4>DeFi isn’t going away anytime soon.</h4>
-                    <p>Keep your exposure to ETH and WBTC while taking advantage of the explosive growth  of the DeFi space. Park your crypto and have Array do the protocol-hopping. Our smart contracts protect against sudden protocol failures through algorithmic diversification and a highly experienced team. </p>
-                    <button className="to-team">view our team</button>
+        
+            <Right>
+                <div className="top">
+                    <div className="top-content">
+                        <h1>Array is the ultimate DeFi protocol.</h1>
+                        <h4>DeFi isn’t going away anytime soon.</h4>
+                        <p>Keep your exposure to ETH and WBTC while taking advantage of the explosive growth  of the DeFi space. Park your crypto and have Array do the protocol-hopping. Our smart contracts protect against sudden protocol failures through algorithmic diversification and a highly experienced team. </p>
+                        <button className="to-team">view our team</button>
+                    </div>
                 </div>
-            </div>
-            <div className="bottom">
-                <div className="bottom-content">
-                    <h4>Array is currently managing 
-                    $xxx,xxx,xxx 
-                    in assets.</h4>
+                <div className="bottom">
+                    <div className="bottom-content">
+                        <h4>Array is currently managing 
+                        $xxx,xxx,xxx 
+                        in assets.</h4>
+                    </div>
+                    
                 </div>
-                
-            </div>
             
             
              
-        </Right>
+            </Right>
+        
+        
     );
 }
 

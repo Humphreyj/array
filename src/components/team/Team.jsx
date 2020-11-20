@@ -1,7 +1,7 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import styled from 'styled-components';
-
-
+import UIC from '../../context/Context';
+import { motion } from "framer-motion";
 import TeamDescription from './TeamDescription';
 import TeamPhotos from './TeamPhotos';
 
@@ -34,7 +34,16 @@ const Wrapper = styled.div`
 `;
 
 const Team = () => {
+    const {pageStyle,variants,pageTransition} = useContext(UIC);
     return (
+        <motion.div
+            style={pageStyle}
+            initial="initial"
+            animate="in"
+            exit="out"
+            variants={variants}
+            transition={pageTransition}
+        >
         <Wrapper>
         <TeamDiv>
             <TeamDescription />
@@ -43,6 +52,7 @@ const Team = () => {
             
         </TeamDiv>
         </Wrapper>
+        </motion.div>
     );
 }
 
