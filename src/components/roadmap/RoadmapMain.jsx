@@ -72,7 +72,7 @@ p {
     p {
         font-size: 1em;
         width: 90%;
-        margin: 5px auto;
+        margin: 3px auto;
     }
     .phase {
         font-size: 1.1em;
@@ -98,7 +98,7 @@ p {
     p {
         font-size: 1em;
         width: 90%;
-        margin: 5px auto;
+        margin: 3px auto;
     }
     .phase {
         font-size: 1em;
