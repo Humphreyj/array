@@ -10,7 +10,7 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 45%;
   -webkit-clip-path: polygon(15% 0, 100% 0, 100% 30%, 100% 73%, 86% 100%, 0 100%, 0% 70%, 0 35%);
   clip-path: polygon(15% 0, 100% 0, 100% 30%, 100% 73%, 86% 100%, 0 100%, 0% 70%, 0 35%);
   background-color: #121212;
@@ -27,7 +27,7 @@ const Right = styled.div`
         flex-direction: column;
         align-items: flex-end;
         h1 {
-            font-size: 5em;
+            font-size: 5.5em;
             width: 70%;
             text-align: right;
             margin-bottom: 0;
@@ -38,7 +38,7 @@ const Right = styled.div`
         }
         p {
             text-align: right;
-            width: 90%;
+            width: 75%;
             font-size: 1.8em;
         }
         button {
@@ -71,7 +71,7 @@ const Right = styled.div`
             flex-direction: column;
             align-items: flex-start;
             h4 {
-                font-size: 3.5em;
+                font-size: 4em;
                 width: 50%;
             }
         }

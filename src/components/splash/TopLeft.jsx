@@ -1,7 +1,5 @@
-import React,{useContext} from 'react';
-import UIC from '../../context/Context';
+import React from 'react';
 import styled from 'styled-components';
-import { CSSTransition } from 'react-transition-group';        
 import littleLogo from '../../assets/img/arraylogofinal.png';
 
 
@@ -12,7 +10,7 @@ const Left = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
+    width: 45%;
     padding-left: 3%;
     -webkit-clip-path: polygon(100% 0, 100% 69%, 84% 100%, 0 100%, 0 0);
     clip-path: polygon(100% 0, 100% 69%, 84% 100%, 0 100%, 0 0);
@@ -24,7 +22,7 @@ const Left = styled.div`
 
         }
         .content {
-            padding-bottom: 1%;
+            padding: 2% 0;
             color: white;
             .mobile-title {
                 display: none;
@@ -441,7 +439,7 @@ const Left = styled.div`
 
 
 const TopLeft = () => {
-    const {page}=useContext(UIC);
+    
     return (
        
             <Left className='left'>

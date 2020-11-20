@@ -3,8 +3,6 @@ import styled from 'styled-components';
 
 import TopLeft from './TopLeft';
 import BottomRight from './BottomRight';
-import Social from '../social/Social';
-
 import bigLogo from '../../assets/img/arraylogofinal.png';
 import chart from '../../assets/img/arraySplashChart.PNG';
 
@@ -93,13 +91,13 @@ const Row = styled.div`
         justify-content: center;
 
         .phase-hexagon {
-            height: 700px;
+            
             background-color: #121212;
             width: 75%;
             margin: 0 auto;
             clip-path: polygon(0 0, 91% 0, 100% 39%, 100% 100%, 10% 100%, 0 61%);
             color: white;
-            padding: 0 3%;
+            padding: 1% 3%;
 
             .phase-text {
                 width: 50%;
@@ -109,36 +107,308 @@ const Row = styled.div`
                 }
                 p {
                     font-size: 1.7em;
-                    width: 60%;
+                    width: 80%;
+                    
                 }
+            }
+            .phase-date {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                background-color: #212121;
+                width: 95%;
+                margin-left: 7%;
+                margin-top: 4%;
+                padding: 10px 0;
+
+                .date-left {
+                    margin-left: 1%;
+                    background-color: #121212;
+                    width: 85%;
+                    
+                    h1 {
+                        color: transparent;
+                        font-size: 5.5em;
+                        margin: 5px 0;
+                        
+                    }
+                }
+                .date-right {
+                    width: 18%;
+                    h1 {
+                        font-size: 5.5em;
+                        margin: 5px 5%;
+                    }
+                }
+
+                
+
             }
 
         }
+        @media(max-width: 3750px) {
+            .phase-hexagon {
+                .phase-text {
+                    h1 {
+                        font-size: 6em;
+                        margin: 0;
+                    }
+                    p {
+                        font-size: 1.7em;
+                    }
+                }
+                .phase-date {
+                    .date-left {
+                        h1 {
+                            font-size: 5em;
+                            margin: 5px 0;
+                        }
+                    }
+                    .date-right {
+                        
+                        h1 {
+                            font-size: 5em;
+                            margin: 5px 5%;
+                        }
+                    }                      
+                }
+            }
+        }
+        //max-width: 3750px
+
+        @media(max-width: 3400px) {
+            .phase-hexagon {
+                .phase-text {
+                    width: 65%;
+                    h1 {
+                        font-size: 5em;
+                        margin: 0;
+                    }
+                    p {
+                        font-size: 1.5em;
+                        width: 95%;
+                    }
+                }
+                .phase-date {
+                    .date-left {
+                        h1 {
+                            font-size: 3.6em;
+                            margin: 5px 0;
+                        }
+                    }
+                    .date-right {
+                        
+                        h1 {
+                            font-size: 3.6em;
+                            margin: 5px 5%;
+                        }
+                    }                      
+                }
+            }
+        }
+        //max-width: 3400px
+        
+        @media(max-width: 2556px) {
+            .phase-hexagon {
+                .phase-text {
+                    h1 {
+                        font-size: 4.5em;
+                        margin: 0;
+                    }
+                    p {
+                        font-size: 1.4em;
+                        width: 100%;
+                    }
+                }
+                .phase-date {
+                    .date-left {
+                        h1 {
+                            font-size: 3em;
+                            margin: 5px 0;
+                        }
+                    }
+                    .date-right {
+                        
+                        h1 {
+                            font-size: 3em;
+                            margin: 5px 5%;
+                        }
+                    }                      
+                }
+            }
+        }
+        //max-width: 2556px
+
+        @media(max-width: 2100px) {
+            .phase-hexagon {
+                .phase-text {
+                    
+                    h1 {
+                        font-size: 4em;
+                        margin: 0;
+                    }
+                    p {
+                        font-size: 1.3em;
+                        width: 100%;
+                    }
+                }
+                .phase-date {
+                    .date-left {
+                        
+                        h1 {
+                            font-size: 2.6em;
+                            margin: 5px 0;
+                        }
+                    }
+                    .date-right {
+                        
+                        h1 {
+                            font-size: 2.6em;
+                            margin: 5px 5%;
+                        }
+                    }                      
+                }
+            }
+        }
+        //max-width: 2100px
+        @media(max-width: 1800px) {
+            .phase-hexagon {
+                .phase-text {
+                    
+                    h1 {
+                        font-size: 3.5em;
+                        margin: 0;
+                    }
+                    p {
+                        font-size: 1.2em;
+                        width: 100%;
+                    }
+                }
+                .phase-date {
+                    .date-left {
+                        
+                        h1 {
+                            font-size: 2.6em;
+                            margin: 5px 0;
+                        }
+                    }
+                    .date-right {
+                        
+                        h1 {
+                            font-size: 2.6em;
+                            margin: 5px 5%;
+                        }
+                    }                      
+                }
+            }
+        }
+        //max-width: 1800px
+
+        @media(max-width: 1440px) {
+            .phase-hexagon {
+                .phase-text {
+                    
+                    h1 {
+                        font-size: 3.5em;
+                        margin: 0;
+                    }
+                    p {
+                        font-size: 1em;
+                        width: 100%;
+                    }
+                }
+                .phase-date {
+                    .date-left {
+                        
+                        h1 {
+                            font-size: 2.6em;
+                            margin: 5px 0;
+                        }
+                    }
+                    .date-right {
+                        width: 18%;
+                        h1 {
+                            font-size: 2.2em;
+                            margin: 5px 5%;
+                        }
+                    }                      
+                }
+            }
+        }
+        //max-width: 1440px
+
+        @media(max-width: 1280px) {
+            .phase-hexagon {
+                .phase-text {
+                    
+                    h1 {
+                        font-size: 3em;
+                        margin: 0;
+                    }
+                    p {
+                        font-size: 1em;
+                        width: 100%;
+                    }
+                }
+                .phase-date {
+                    .date-left {
+                        
+                        h1 {
+                            font-size: 2em;
+                            margin: 5px 0;
+                        }
+                    }
+                    .date-right {
+                        width: 18%;
+                        h1 {
+                            font-size: 2em;
+                            margin: 5px 5%;
+                        }
+                    }                      
+                }
+            }
+        }
+        //max-width: 1280px
+
+        @media(max-width: 1100px) {
+            
+            .phase-hexagon {
+                
+                .phase-text {
+                    
+                    h1 {
+                        font-size: 3em;
+                        margin: 0;
+                    }
+                    p {
+                        font-size: 1em;
+                        width: 100%;
+                    }
+                }
+                .phase-date {
+                    .date-left {
+                        
+                        h1 {
+                            font-size: 2em;
+                            margin: 5px 0;
+                        }
+                    }
+                    .date-right {
+                        width: 18%;
+                        h1 {
+                            font-size: 2em;
+                            margin: 5px 5%;
+                        }
+                    }                      
+                }
+            }
+        }
+        //max-width: 1280px
     }
+    //phase
+
     &.two {
         margin-left: 3%;
-        .phase-hexagon {
-            height: 700px;
-            background-color: #121212;
-            width: 75%;
-            margin: 0 auto;
-            clip-path: polygon(0 0, 91% 0, 100% 39%, 100% 100%, 10% 100%, 0 61%);
-            color: white;
-            padding: 0 3%;
-
-            .phase-text {
-                width: 50%;
-                h1 {
-                    font-size: 6em;
-                    margin: 0;
-                }
-                p {
-                    font-size: 1.7em;
-                    width: 60%;
-                }
-            }
-
-        }
         
     }
 `;
@@ -172,6 +442,7 @@ const Splash = () => {
                         <h1>Future-proof</h1>
                         <p>DeFi built with the future in mind. We want to build a new cornerstone of the Ethereum ecosystem, built for the community. This means no VC bills to pay back or premine to worry about. To do this, Array is being built in phases.</p>
                     </div>
+                    
                 </Row>
                 
                 <Row className='phase'>
@@ -179,6 +450,15 @@ const Splash = () => {
                         <div className="phase-text">
                             <h1>Phase 0</h1>
                             <p>All work has to start somewhere. Phase 0 includes the initial groundwork for the Array ecosystem.  Phase 0 allows users to deposit any tokens that can be farmed for either PICKLE or FARM, and automatically transfers the accumulated yield into the respective profit sharing pool, saving gas and increasing ROI. It also introduces the Array governance token, the ARRAY/DAI Uniswap pool, and staking opportunities for early adopters. Array will be generated on top of any existing yield, as yet another way to increase ROI and reward early adopters.</p>
+                        </div>
+
+                        <div className="phase-date">
+                            <div className="date-left">
+                                <h1>Q4 2020</h1>
+                            </div>
+                            <div className="date-right">
+                                <h1>Q4 2020</h1>
+                            </div>
                         </div>
                     </div>
                 </Row>
@@ -188,6 +468,15 @@ const Splash = () => {
                         <div className="phase-text">
                             <h1>Phase 0</h1>
                             <p>All work has to start somewhere. Phase 0 includes the initial groundwork for the Array ecosystem.  Phase 0 allows users to deposit any tokens that can be farmed for either PICKLE or FARM, and automatically transfers the accumulated yield into the respective profit sharing pool, saving gas and increasing ROI. It also introduces the Array governance token, the ARRAY/DAI Uniswap pool, and staking opportunities for early adopters. Array will be generated on top of any existing yield, as yet another way to increase ROI and reward early adopters.</p>
+                        </div>
+
+                        <div className="phase-date">
+                            <div className="date-left">
+                                <h1>Q4 2020</h1>
+                            </div>
+                            <div className="date-right">
+                                <h1>Q4 2020</h1>
+                            </div>
                         </div>
                             
                     </div>
