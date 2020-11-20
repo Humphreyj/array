@@ -22,7 +22,7 @@ const Left = styled.div`
 
         }
         .content {
-            padding-top: 4%;
+            padding-top: 7%;
             padding-bottom: 2%;
             color: white;
             .mobile-title {
@@ -471,7 +471,82 @@ const Left = styled.div`
         }
     }
     //max-width: 1110px
+
+    @media(max-width: 600px) {
+        width: 100%;
+        .content {
+            .description {
+                .coming-soon {
+                    font-size: 1.8em;
+                    
+                }
+                h1 {
+                    font-size: 3em;
+                }
+                .sub-title {
+                    font-size: 1.2em;
+
+                }
+                p {
+                   font-size: 1em;
+                }
+                    
+            }
+        }
+        .social {
+            width: 45%;
+            .social-heading {
+                border: 3px solid white;
+                text-align: center;
+                font-size: 1.4em;
+            }
+            .social-links {
+                .fab {
+                    font-size: 2.2em;
+                    
+                }
+            }
+        }
+    }
+    //max-width: 600px
     
+    @media(max-width: 500px) {
+        width: 100%;
+        .content {
+            .description {
+                .coming-soon {
+                    font-size: 1.8em;
+                    
+                }
+                h1 {
+                    font-size: 3em;
+                }
+                .sub-title {
+                    font-size: 1.2em;
+
+                }
+                p {
+                   font-size: 1em;
+                }
+                    
+            }
+        }
+        .social {
+            width: 60%;
+            .social-heading {
+                border: 3px solid white;
+                text-align: center;
+                font-size: 1.2em;
+            }
+            .social-links {
+                .fab {
+                    font-size: 2.2em;
+                    
+                }
+            }
+        }
+    }
+    //max-width: 500px
 
 `;
 

@@ -8,7 +8,7 @@ flex-direction: column;
 align-items: flex-start;
 justify-content: flex-start;
 color: white;
-width: 25%;
+width: 35%;
 padding-left: 100px;
 margin-top: -25px;
 height: 70vh;
@@ -149,8 +149,7 @@ position: relative;
     }
     //max-width 1280px
     @media(max-width: 1190px) {
-        padding-left: 0px;
-        padding-right: 50px;
+        
         h1 {
             font-size: 4em;
             
@@ -180,7 +179,7 @@ position: relative;
     }
     //max-width 1190px
     @media(max-width: 970px) {
-        
+        padding-left: 0;
         width: 100%;
         height: 22vh;
         align-items: center;
@@ -211,7 +210,7 @@ position: relative;
                 
             }
             .social-links {
-                width: 80%;
+                width: 50%;
             }
         }
     }

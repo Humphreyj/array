@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import TopLeft from './TopLeft';
 import BottomRight from './BottomRight';
-import bigLogo from '../../assets/img/arraylogofinal.png';
+import bigLogo from '../../assets/img/logoWithText.PNG';
 import chart from '../../assets/img/arraySplashChart.PNG';
 
 const SplashDiv = styled.div`
@@ -29,7 +29,7 @@ const SplashDiv = styled.div`
     
 
         img {
-        width: 40%;
+        width: 50%;
         height: auto;
         }
 
@@ -44,12 +44,12 @@ const SplashDiv = styled.div`
     }
 
     .chart {
-        width: 50%;
+        width: 55%;
         display: flex;
         flex-direction: column;
         align-items: center;
         img {
-            width: 40%;
+            width: 45%;
             height: auto;
             }
             @media(max-width: 1100px) {
@@ -87,6 +87,9 @@ const Row = styled.div`
                 width: 40%;
                 margin: 20px auto;
                 font-size: 1.2em;
+                @media(max-width: 1100px) {
+                    width: 80%;
+                }
 
             }
         }
@@ -447,8 +450,28 @@ const Row = styled.div`
     &.two {
         margin-left: 3%;
         margin-top: 50px;
+        @media(max-width: 1100px) {
+            margin-left: 0;
+        }
         
     }
+    &.three {
+        margin-left: 6%;
+        margin-top: 50px;
+        @media(max-width: 1100px) {
+            margin-left: 0;
+        }
+        
+    }
+    &.four {
+        margin-left: 9%;
+        margin-top: 50px;
+        @media(max-width: 1100px) {
+            margin-left: 0;
+        }
+        
+    }
+   
 `;
 
 
@@ -502,6 +525,44 @@ const Splash = () => {
                 </Row>
 
                 <Row className='phase two'>
+                    <div className="phase-hexagon">
+                        <div className="phase-text">
+                            <h1>Phase 0</h1>
+                            <p>All work has to start somewhere. Phase 0 includes the initial groundwork for the Array ecosystem.  Phase 0 allows users to deposit any tokens that can be farmed for either PICKLE or FARM, and automatically transfers the accumulated yield into the respective profit sharing pool, saving gas and increasing ROI. It also introduces the Array governance token, the ARRAY/DAI Uniswap pool, and staking opportunities for early adopters. Array will be generated on top of any existing yield, as yet another way to increase ROI and reward early adopters.</p>
+                        </div>
+
+                        <div className="phase-date">
+                            <div className="date-left">
+                                <h1>Q4 2020</h1>
+                            </div>
+                            <div className="date-right">
+                                <h1>Q4 2020</h1>
+                            </div>
+                        </div>
+                            
+                    </div>
+                </Row>
+
+                <Row className='phase three'>
+                    <div className="phase-hexagon">
+                        <div className="phase-text">
+                            <h1>Phase 0</h1>
+                            <p>All work has to start somewhere. Phase 0 includes the initial groundwork for the Array ecosystem.  Phase 0 allows users to deposit any tokens that can be farmed for either PICKLE or FARM, and automatically transfers the accumulated yield into the respective profit sharing pool, saving gas and increasing ROI. It also introduces the Array governance token, the ARRAY/DAI Uniswap pool, and staking opportunities for early adopters. Array will be generated on top of any existing yield, as yet another way to increase ROI and reward early adopters.</p>
+                        </div>
+
+                        <div className="phase-date">
+                            <div className="date-left">
+                                <h1>Q4 2020</h1>
+                            </div>
+                            <div className="date-right">
+                                <h1>Q4 2020</h1>
+                            </div>
+                        </div>
+                            
+                    </div>
+                </Row>
+
+                <Row className='phase four'>
                     <div className="phase-hexagon">
                         <div className="phase-text">
                             <h1>Phase 0</h1>

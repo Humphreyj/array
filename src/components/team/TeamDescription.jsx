@@ -60,6 +60,16 @@ margin-top: 10px;
         }
     }
 
+    @media(max-width: 2556px) {
+        p {
+            width: 80%;
+        }
+        .social {
+            top: 44%;
+        }
+    }
+    //max-width: 2556px
+
     @media(max-width: 1920px) {
         p {
             width: 80%;
@@ -102,7 +112,7 @@ margin-top: 10px;
             width: 85%;
         }
         .social {
-            top: 15%;
+            top: 13%;
             
             .title {
                 font-size: 2em;
@@ -131,15 +141,15 @@ margin-top: 10px;
                 
             }
             .social-links {
-                width: 70%;
+                width: 50%;
         
             }
         }
     }
     //max-width: 970px;
 
-    @media(max-width: 970px) {
-        height: 25vh;
+    @media(max-width: 768px) {
+        height: 26vh;
         width: 100%;
         p {
             width: 80%;
@@ -147,35 +157,35 @@ margin-top: 10px;
         .social {
             position: absolute;
             width: 80%;
-            top: 80%;
+            top: 78%;
             left: 10%;
             .title {
                 font-size: 2em;
                 
             }
             .social-links {
-                width: 70%;
+                width: 50%;
         
             }
         }
     }
-    //max-width: 970px;
+    //max-width: 768px;
+
 }
-
-@media(max-width: 605px) {
-    height: 31vh;
-    margin-top: 0px;
-    width: 100%;
-    .social {
-        top: 84%;
-        .title {
-            font-size: 1.8em;
+    @media(max-width: 605px) {
+        height: 30vh;
+        margin-top: 0px;
+        width: 100%;
+        .social {
+            top: 80%;
+            .title {
+                font-size: 1.8em;
+            }
         }
+        //max-width: 600px
     }
-    //max-width: 600px
-
     @media(max-width: 540px) {
-        height: 23vh;
+        height: 22vh;
         margin-top: 0px;
         width: 100%;
         h1 {
@@ -190,7 +200,7 @@ margin-top: 10px;
             margin-top: 0;
         }
         .social {
-            top: 83%;
+            top: 76%;
             .title {
                 font-size: 1.4em;
             }
@@ -204,7 +214,7 @@ margin-top: 10px;
         //pretty much to explicityly handle the surface duo
     
 @media(max-width: 500px) {
-    height: 30vh;
+    height: 18vh;
     margin-top: 0px;
     width: 100%;
     .social {
@@ -216,7 +226,7 @@ margin-top: 10px;
     //max-width: 500px
 
     @media(max-width: 414px) {
-        height: 56vh;
+        height: 32vh;
         .social {
             top: 83%;
             .title {
@@ -227,7 +237,7 @@ margin-top: 10px;
     }
     //max-width: 411px
     @media(max-width: 380px) {
-        height: 64vh;
+        height: 36vh;
         .social {
             top: 83%;
             .title {
@@ -239,7 +249,7 @@ margin-top: 10px;
     //max-width: 380px
 
     @media(max-width: 360px) {
-        height: 66vh;
+        height: 42vh;
         .social {
             top: 83%;
             .title {
@@ -250,7 +260,7 @@ margin-top: 10px;
     }
     //max-width: 360px
     @media(max-width: 320px) {
-        height: 90vh;
+        height: 60vh;
         .social {
             top: 83%;
             .title {

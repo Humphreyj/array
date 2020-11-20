@@ -112,6 +112,7 @@ function App() {
             <Link onClick={toggleSidedrawer} to='/'>array.finance</Link>
             <Link onClick={toggleSidedrawer} to='/roadmap'>roadmap</Link>
             <Link onClick={toggleSidedrawer} to='/team'>team</Link>
+            <a onClick={toggleSidedrawer} href="https://varianhalai.github.io/array-dash/" target="_blank" rel='noreferrer'>dashboard</a>
           </nav>
         
         </div>

@@ -293,6 +293,7 @@ const Right = styled.div`
         //max-width: 1280px
         @media(max-width: 1100px) {
             width: 100%;
+            margin-top: 50px;
         }
 
   

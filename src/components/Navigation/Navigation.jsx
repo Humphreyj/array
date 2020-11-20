@@ -46,6 +46,7 @@ const Navigation = ({history,location}) => {
                 <Link to='/roadmap' onClick={goRoadmap} className={page.roadmap ? "nav-link bordered" : "nav-link"}>roadmap</Link>
                 {/* <Link to='/faq' className="nav-link">faq</Link> */}
                 <Link to='/team' onClick={goTeam} className={page.team ? "nav-link bordered" : "nav-link"}>team</Link>
+                <a href="https://varianhalai.github.io/array-dash/" target="_blank" rel='noreferrer'>dashboard</a>
             </nav>
             <i 
             className={open ? "fas fa-bars rotate" : "fas fa-bars"} 
