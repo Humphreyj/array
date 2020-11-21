@@ -6,6 +6,7 @@ import jhump from '../../assets/img/jhump.jpg';
 import joshua from '../../assets/img/Joshua_Headshot.png';
 import gavin from '../../assets/img/gavin.jpg';
 import Gunnar from '../../assets/img/Gunnar.png';
+import bill from '../../assets/img/arraylogofinal.png';
 
 
 const Photos = styled.div`
@@ -93,27 +94,29 @@ const teamData = [
     },
     {
         id: 2,
-        name: 'Joshua',
+        name: 'Joshua Lapidus',
         desc: 'Project Manager, previously at Consensys',
         img: joshua
     },
+    
     {
         id: 3,
-        name: 'programming lawyer guy',
-        desc: 'Solidity Developer, Pool-Party and PeepsDemocracy'
-    },
-    {
-        id: 4,
-        name: 'Gavin',
+        name: 'Gavin Nicholson',
         desc: 'Marketing',
         img: gavin
         
     },
     {
-        id: 5,
+        id: 4,
         name: 'Josh Humphrey',
         desc: 'Frontend Developer',
         img: jhump
+    },
+    {
+        id: 5,
+        name: 'Bill',
+        desc: '',
+        img: bill
     },
     
 ]
