@@ -5,6 +5,7 @@ import zack from '../../assets/img/zack.png';
 import jhump from '../../assets/img/jhump.jpg';
 import joshua from '../../assets/img/Joshua_Headshot.png';
 import gavin from '../../assets/img/gavin.jpg';
+import Gunnar from '../../assets/img/Gunnar.png';
 
 
 const Photos = styled.div`
@@ -12,7 +13,7 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 background-color: #121212;
-margin-top: 40px;
+margin-top: 4%;
 width: 30%;
 scrollbar-color: rgba(255, 255, 255, 0.4);
   scrollbar-width: thin;
@@ -36,6 +37,10 @@ scrollbar-color: rgba(255, 255, 255, 0.4);
     
     background-color: rgba(255, 255, 255, 0.4);
  }
+ @media(min-width: 2700px) {
+     margin-top: 2%;
+ }
+ 
 @media(max-width: 1920px) {
     width: 40%;
 }
@@ -77,7 +82,8 @@ const teamData = [
     {
         id: 0,
         name: 'Gunnar Olsen',
-        desc: 'Data  Scientist'
+        desc: 'Data  Scientist',
+        img: Gunnar
     },
     {
         id: 1,
@@ -98,7 +104,7 @@ const teamData = [
     },
     {
         id: 4,
-        name: 'gavin',
+        name: 'Gavin',
         desc: 'Marketing',
         img: gavin
         
@@ -138,6 +144,12 @@ img {
     p {
         margin: 5px 20px;
         font-size: 1.8em;
+    }
+}
+@media(min-width: 2700px) {
+    img {
+        height: 200px;
+        width: 200px;
     }
 }
 @media(max-width: 1920px) {

@@ -40,7 +40,7 @@ position: relative;
         color: white;
         .title {
             font-size: 2.5em;
-            border: 4px solid white;
+            border: 3px solid white;
             padding: 1px 5px;
         }
         
@@ -106,7 +106,7 @@ position: relative;
             color: white;
             .title {
                 font-size: 1.7em;
-                border: 8px solid white;
+                border: 3px solid white;
                 padding: 1px 5px;
             }
     
@@ -137,7 +137,7 @@ position: relative;
             color: white;
             .title {
                 font-size: 1.7em;
-                border: 4px solid white;
+                border: 3px solid white;
                 padding: 1px 5px;
             }
     
@@ -250,9 +250,9 @@ position: relative;
     }
     //max-width: 500px
     @media(max-width: 414px) {
-        height: 39vh;
+        height: 42vh;
         .social {
-            top: 280%;
+            top: 250%;
             .title {
                 font-size: 1.8em;
             }
@@ -261,16 +261,16 @@ position: relative;
     }
     //max-width: 411px
     @media(max-width: 377px) {
-        height:45vh;
+        height: 43vh;
         .social {
-            top: 245%;
+            top: 235%;
             .title {
                 font-size: 1.8em;
             }
         }
         
     }
-    //max-width: 411px
+    //max-width: 377px
     @media(max-width: 360px) {
         height: 53vh;
         .social {

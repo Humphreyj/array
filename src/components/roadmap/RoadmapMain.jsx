@@ -59,6 +59,15 @@ p {
         width: 95%;
     }
 }
+@media(min-width: 2700px) {
+    p {
+        margin: 5px auto;
+        font-size: 2em;
+    }
+    .phase {
+        font-size: 2.2em;
+    }
+}
 @media(max-width: 1920px) {
     p {
         margin: 5px auto;

@@ -94,6 +94,52 @@ const Row = styled.div`
 
             }
         }
+        @media(max-width: 1100px) {
+            margin-top: 60px;
+        }
+    }
+
+    &.mobile-logo {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        margin: 45px 0 15px 0;
+        
+        @media(max-width: 1100px) {
+            display: flex;
+            .logo {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    width: 50%;
+
+                }
+            }
+        }
+    }
+    &.mobile-chart {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        margin-top 50px;
+        
+        @media(max-width: 1100px) {
+            display: flex;
+            .logo {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    width: 50%;
+
+                }
+            }
+        }
     }
 
     &.phase {
@@ -124,7 +170,7 @@ const Row = styled.div`
             .phase-date {
                 display: flex;
                 align-items: center;
-                justify-content: flex-end;
+                justify-content: space-between;
                 background-color: #212121;
                 width: 95%;
                 margin-left: 7%;
@@ -132,22 +178,16 @@ const Row = styled.div`
                 padding: 10px 0;
 
                 .date-left {
-                    margin-left: 1%;
                     background-color: #121212;
-                    width: 85%;
-                    
-                    h1 {
-                        color: transparent;
-                        font-size: 5.5em;
-                        margin: 5px 0;
-                        
-                    }
+                    width: 75%;
+                    margin-left: 1%;
+                    height: 5.5em;
                 }
                 .date-right {
-                    width: 18%;
+                    width: 20%;
                     h1 {
                         font-size: 5.5em;
-                        margin: 5px 5%;
+                        margin: 5px;
                     }
                 }
 
@@ -169,16 +209,13 @@ const Row = styled.div`
                 }
                 .phase-date {
                     .date-left {
-                        h1 {
-                            font-size: 5em;
-                            margin: 5px 0;
-                        }
+                        height: 5em;
                     }
                     .date-right {
                         
                         h1 {
                             font-size: 5em;
-                            margin: 5px 5%;
+                            margin: 5px;
                         }
                     }                      
                 }
@@ -201,16 +238,13 @@ const Row = styled.div`
                 }
                 .phase-date {
                     .date-left {
-                        h1 {
-                            font-size: 3.6em;
-                            margin: 5px 0;
-                        }
+                        height: 3.6em;
                     }
                     .date-right {
                         
                         h1 {
                             font-size: 3.6em;
-                            margin: 5px 5%;
+                            margin: 5px;
                         }
                     }                      
                 }
@@ -232,16 +266,13 @@ const Row = styled.div`
                 }
                 .phase-date {
                     .date-left {
-                        h1 {
-                            font-size: 3em;
-                            margin: 5px 0;
-                        }
+                        height: 3em;
                     }
                     .date-right {
                         
                         h1 {
                             font-size: 3em;
-                            margin: 5px 5%;
+                            margin: 5px;
                         }
                     }                      
                 }
@@ -264,17 +295,14 @@ const Row = styled.div`
                 }
                 .phase-date {
                     .date-left {
-                        
-                        h1 {
-                            font-size: 2.6em;
-                            margin: 5px 0;
-                        }
+                        margin: 5px;
+                        height: 2.6em;
                     }
                     .date-right {
                         
                         h1 {
                             font-size: 2.6em;
-                            margin: 5px 5%;
+                            margin: 5px;
                         }
                     }                      
                 }
@@ -297,16 +325,13 @@ const Row = styled.div`
                 .phase-date {
                     .date-left {
                         
-                        h1 {
-                            font-size: 2.6em;
-                            margin: 5px 0;
-                        }
+                        height: 2.6em;
                     }
                     .date-right {
                         
                         h1 {
                             font-size: 2.6em;
-                            margin: 5px 5%;
+                            margin: 5px;
                         }
                     }                      
                 }
@@ -330,16 +355,13 @@ const Row = styled.div`
                 .phase-date {
                     .date-left {
                         
-                        h1 {
-                            font-size: 2.6em;
-                            margin: 5px 0;
-                        }
+                        height: 2.2em;
                     }
                     .date-right {
                         width: 18%;
                         h1 {
                             font-size: 2.2em;
-                            margin: 5px 5%;
+                            margin: 5px;
                         }
                     }                      
                 }
@@ -363,16 +385,13 @@ const Row = styled.div`
                 .phase-date {
                     .date-left {
                         
-                        h1 {
-                            font-size: 2em;
-                            margin: 5px 0;
-                        }
+                        height: 2em;
                     }
                     .date-right {
                         width: 18%;
                         h1 {
                             font-size: 2em;
-                            margin: 5px 5%;
+                            margin: 5px;
                         }
                     }                      
                 }
@@ -397,16 +416,13 @@ const Row = styled.div`
                 .phase-date {
                     .date-left {
                         
-                        h1 {
-                            font-size: 2em;
-                            margin: 5px 0;
-                        }
+                        height: 2em;
                     }
                     .date-right {
                         width: 18%;
                         h1 {
                             font-size: 2em;
-                            margin: 5px 5%;
+                            margin: 5px;
                         }
                     }                      
                 }
@@ -430,48 +446,116 @@ const Row = styled.div`
                 .phase-date {
                     .date-left {
                         width: 75%;
-                        h1 {
-                            font-size: 1.2em;
-                            margin: 5px 0;
-                        }
+                        height: 1.2em;
                     }
                     .date-right {
                         width: 25%;
                         h1 {
                             font-size: 1.2em;
-                            margin: 5px 5%;
+                            margin: 5px;
                         }
                     }                      
                 }
             }
         }
+
+        &.two {
+    
+            .phase-date {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #212121;
+                width: 95%;
+                margin-left: 7%;
+                margin-top: 4%;
+                padding: 10px 0;
+
+                .date-left {
+                    background-color: #121212;
+                    width: 10%;
+                    
+                    
+                }
+                .date-right {
+                    width: 20%;
+                    h1 {
+                       
+                        margin: 5px;
+                    }
+                }
+
+                
+
+            }
+
+        }
+        &.three {
+            .phase-date {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #212121;
+                width: 95%;
+                margin-left: 7%;
+                margin-top: 4%;
+                padding: 10px 0;
+
+                .date-left {
+                    background-color: #212121;
+                    width: 75%;
+                    
+                    
+                }
+                .date-right {
+                    width: 20%;
+                    h1 {
+                        
+                        margin: 5px;
+                    }
+                }
+
+                
+
+            }
+
+                
+
+            }
+        &.four {
+            .phase-date {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #212121;
+                width: 95%;
+                margin-left: 7%;
+                margin-top: 4%;
+                padding: 10px 0;
+
+                .date-left {
+                    background-color: #212121;
+                    width: 75%;
+                    
+                    
+                }
+                .date-right {
+                    width: 20%;
+                    h1 {
+                        
+                        margin: 5px;
+                    }
+                }
+
+                
+
+            }
+            
+        }
+       
     }
     //phase
 
-    // &.two {
-    //     margin-left: 3%;
-    //     margin-top: 50px;
-    //     @media(max-width: 1100px) {
-    //         margin-left: 0;
-    //     }
-        
-    // }
-    // &.three {
-    //     margin-left: 6%;
-    //     margin-top: 50px;
-    //     @media(max-width: 1100px) {
-    //         margin-left: 0;
-    //     }
-        
-    // }
-    // &.four {
-    //     margin-left: 9%;
-    //     margin-top: 50px;
-    //     @media(max-width: 1100px) {
-    //         margin-left: 0;
-    //     }
-        
-    // }
    
 `;
 
@@ -500,11 +584,27 @@ const Splash = () => {
                     </div>
                 </Row>
 
+                <Row className='mobile-logo'>
+                    <div className="logo">
+                        <img src={bigLogo} alt=""/>
+                        
+                    </div>
+
+                </Row>
+
                 <Row className='bottom'>
                     <div className="chart">
                         <img src={chart} alt=""/>
                     </div>
                     <BottomRight />
+                </Row>
+
+                <Row className='mobile-logo'>
+                    <div className="logo">
+                        <img src={chart} alt=""/>
+                        
+                    </div>
+
                 </Row>
 
                 <Row className="splash-break">
@@ -524,7 +624,7 @@ const Splash = () => {
 
                         <div className="phase-date">
                             <div className="date-left">
-                                <h1>Q4 2020</h1>
+                                
                             </div>
                             <div className="date-right">
                                 <h1>Q4 2020</h1>
@@ -536,16 +636,16 @@ const Splash = () => {
                 <Row className='phase two'>
                     <div className="phase-hexagon">
                         <div className="phase-text">
-                            <h1>Phase 0</h1>
-                            <p>All work has to start somewhere. Phase 0 includes the initial groundwork for the Array ecosystem.  Phase 0 allows users to deposit any tokens that can be farmed for either PICKLE or FARM, and automatically transfers the accumulated yield into the respective profit sharing pool, saving gas and increasing ROI. It also introduces the Array governance token, the ARRAY/DAI Uniswap pool, and staking opportunities for early adopters. Array will be generated on top of any existing yield, as yet another way to increase ROI and reward early adopters.</p>
+                            <h1>Phase 1</h1>
+                            <p>Building off of Phase 0, Phase 1 comes with pre-built indexes that balance risk and reward potential from a selection of reputable DeFi assets. Using what was built on Phase 0, all assets will automatically be harvested and placed into respective profit sharing pools, and automatically rebalance based on market conditions, with easy exits to ETH, WBTC, or the equivalent proportion of the underlying assets.</p>
                         </div>
 
                         <div className="phase-date">
                             <div className="date-left">
-                                <h1>Q4 2020</h1>
+                                
                             </div>
                             <div className="date-right">
-                                <h1>Q4 2020</h1>
+                                <h1>Q1 2021</h1>
                             </div>
                         </div>
                             
@@ -555,16 +655,16 @@ const Splash = () => {
                 <Row className='phase three'>
                     <div className="phase-hexagon">
                         <div className="phase-text">
-                            <h1>Phase 0</h1>
-                            <p>All work has to start somewhere. Phase 0 includes the initial groundwork for the Array ecosystem.  Phase 0 allows users to deposit any tokens that can be farmed for either PICKLE or FARM, and automatically transfers the accumulated yield into the respective profit sharing pool, saving gas and increasing ROI. It also introduces the Array governance token, the ARRAY/DAI Uniswap pool, and staking opportunities for early adopters. Array will be generated on top of any existing yield, as yet another way to increase ROI and reward early adopters.</p>
+                            <h1>Phase 2</h1>
+                            <p>Phase 2 introduces our smart algorithm, which autonomously rebalances based on a weighting system. Assets are weighed using metrics like market cap, liquidity, ROI, yield potential, and risk. These autonomous indexes will be deployed alongside all pre-existing contracts</p>
                         </div>
 
                         <div className="phase-date">
                             <div className="date-left">
-                                <h1>Q4 2020</h1>
+                                
                             </div>
                             <div className="date-right">
-                                <h1>Q4 2020</h1>
+                                <h1>Q2 2021</h1>
                             </div>
                         </div>
                             
@@ -574,16 +674,16 @@ const Splash = () => {
                 <Row className='phase four'>
                     <div className="phase-hexagon">
                         <div className="phase-text">
-                            <h1>Phase 0</h1>
-                            <p>All work has to start somewhere. Phase 0 includes the initial groundwork for the Array ecosystem.  Phase 0 allows users to deposit any tokens that can be farmed for either PICKLE or FARM, and automatically transfers the accumulated yield into the respective profit sharing pool, saving gas and increasing ROI. It also introduces the Array governance token, the ARRAY/DAI Uniswap pool, and staking opportunities for early adopters. Array will be generated on top of any existing yield, as yet another way to increase ROI and reward early adopters.</p>
+                            <h1>Phase 3</h1>
+                            <p>Phase 3 introduces user-built indexes. Pick any ERC-20 assets, balance your ideal porfolio, and Array can handle the rest. </p>
                         </div>
 
                         <div className="phase-date">
                             <div className="date-left">
-                                <h1>Q4 2020</h1>
+                                
                             </div>
                             <div className="date-right">
-                                <h1>Q4 2020</h1>
+                                <h1>Q3 2021</h1>
                             </div>
                         </div>
                             

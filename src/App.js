@@ -8,6 +8,7 @@ import styled from 'styled-components';
 
 import Navigation from './components/Navigation/Navigation';
 import Container from './Container';
+import Footer from './components/footer/Footer';
 
 import UIC from './context/Context';
 import logo from './assets/img/arraylogofinal.png';
@@ -105,33 +106,38 @@ function App({location}) {
     initial: {
       
       x: "-100%",
+      opacity: 0
       
     },
     in: {
      
       x: 0,
+      opacity: 1
      
     },
     out: {
       
       x: "100%",
-      
+      opacity: 0
     }
   };
   const pageVariants2 = {
     initial: {
       
       x: "100%",
+      opacity: 0
       
     },
     in: {
      
       x: 0,
+      opacity: 1
      
     },
     out: {
       
       x: "-100%",
+      opacity: 0
       
     }
   };
@@ -139,6 +145,7 @@ function App({location}) {
   const pageTransition = {
     transition: 'linear',
     duration: .3,
+    delay: 0
     
   };
   
@@ -170,12 +177,12 @@ function App({location}) {
             <Link onClick={toggleSidedrawer} to='/'>array.finance</Link>
             <Link onClick={toggleSidedrawer} to='/roadmap'>roadmap</Link>
             <Link onClick={toggleSidedrawer} to='/team'>team</Link>
-            <a onClick={toggleSidedrawer} href="https://varianhalai.github.io/array-dash/" target="_blank" rel='noreferrer'>dashboard</a>
           </nav>
         
         </div>
         <Navigation page={page}/>
         <Container />
+        <Footer />
         
     </Appy>
     </UIC.Provider>

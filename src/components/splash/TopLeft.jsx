@@ -434,6 +434,45 @@ const Left = styled.div`
         }
     }
     //max-width: 1320px
+
+    @media(max-width: 1210px) {
+        
+        .content {
+            .description {
+                .coming-soon {
+                    font-size: 1.8em;
+                    
+                }
+                h1 {
+                    font-size: 3em;
+                }
+                .sub-title {
+                    font-size: 1.2em;
+
+                }
+                p {
+                   font-size: 1em;
+                }
+                    
+            }
+        }
+        .social {
+            width: 40%;
+            .social-heading {
+                border: 3px solid white;
+                text-align: center;
+                font-size: 1.4em;
+            }
+            .social-links {
+                .fab {
+                    font-size: 2.5em;
+                    
+                }
+            }
+        }
+    }
+    //max-width: 1210px
+
     @media(max-width: 1110px) {
         width: 100%;
         .content {
@@ -460,7 +499,7 @@ const Left = styled.div`
             .social-heading {
                 border: 3px solid white;
                 text-align: center;
-                font-size: 1.6em;
+                
             }
             .social-links {
                 .fab {

@@ -264,11 +264,39 @@ const Right = styled.div`
         }
         //max-width: 1440px
 
-        @media(max-width: 1280px) {
+        @media(max-width: 1345px) {
             .top {
                 .top-content {
                     h1 {
                         font-size: 2em;
+                    }
+                    h4 {
+                        font-size: 1.6em;
+                    }
+                    p {
+                        font-size: 1em;
+                        width: 95%;
+                    }
+                }
+            }
+            .bottom {
+                margin-top: -10%;
+                .bottom-content {
+                    h4 {
+                        font-size: 2.5em;
+                        width: 65%;
+                    }
+                }
+            }
+            
+        }
+        //max-width: 1345px
+
+        @media(max-width: 1280px) {
+            .top {
+                .top-content {
+                    h1 {
+                        font-size: 1.7em;
                     }
                     h4 {
                         font-size: 1.4em;
@@ -294,7 +322,48 @@ const Right = styled.div`
         @media(max-width: 1100px) {
             width: 100%;
             margin-top: 50px;
+            .bottom {
+                margin-top: 0%;
+                .bottom-content {
+                    h4 {
+                        font-size: 2em;
+                        width: 75%;
+                    }
+                }
+            }
         }
+
+        @media(max-width: 768px) {
+            .top {
+                justify-content: center;
+                .top-content {
+                    align-items: center;
+                    h1 {
+                        font-size: 1.7em;
+                        width: 75%;
+                    }
+                    h4 {
+                        font-size: 1.2em;
+                    }
+                    p {
+                        font-size: 1em;
+                        width: 95%;
+                    }
+                }
+            }
+            .bottom {
+                
+                .bottom-content {
+                    h4 {
+                        font-size: 2em;
+                        width: 75%;
+                    }
+                }
+            }
+            
+        }
+        //max-width: 768px
+        
 
   
         
@@ -315,9 +384,7 @@ const BottomRight = () => {
                 </div>
                 <div className="bottom">
                     <div className="bottom-content">
-                        <h4>Array is currently managing 
-                        $xxx,xxx,xxx 
-                        in assets.</h4>
+                        <h4>Array is currently under construction</h4>
                     </div>
                     
                 </div>
