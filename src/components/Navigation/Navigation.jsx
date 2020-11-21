@@ -40,7 +40,9 @@ const Navigation = ({history,location}) => {
     }
     return (
         <Nav className="header">
-            <img src={littleLogo} alt="array logo"/>
+            <Link to='/'>
+                <img id='top-logo' src={littleLogo} alt="array logo"/>
+            </Link>
             <nav>
                 <Link to='/' onClick={goHome} className={page.home ? "nav-link bordered" : "nav-link"}>array.finance</Link>
                 <Link to='/roadmap' onClick={goRoadmap} className={page.roadmap ? "nav-link bordered" : "nav-link"}>roadmap</Link>

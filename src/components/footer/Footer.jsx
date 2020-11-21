@@ -26,15 +26,42 @@ const Footsies = styled.footer`
         justify-content: center;
 
         img {
-            height: 60px;
-            width: 60px;
+            height: 50px;
+            width: 50px;
         }
     }
 
     .flavor {
         h4 {
             color: white;
-            font-size: 1.8em;
+            font-size: 1.4em;
+        }
+    }
+    @media(max-width: 1100px) {
+        .logo {
+            img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+        .flavor {
+            h4 {
+                font-size: 1.2em;
+            }
+        }
+    }
+    @media(max-width: 600px) {
+        .logo {
+            img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+        .flavor {
+            display: none;
+            h4 {
+                font-size: .9em;
+            }
         }
     }
 `;
@@ -43,7 +70,10 @@ const Footer = () => {
     return (
         <Footsies>
             <div className="logo">
+                <a href="#top-logo">
                 <img src={logo} alt="Array logo"/>
+                </a>
+                
             </div>
             <Social />
             <div className="flavor">

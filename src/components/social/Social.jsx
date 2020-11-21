@@ -18,8 +18,14 @@ color: white;
 }
     .fab {
         color: white;
-        font-size: 3em;
+        font-size: 2em;
         margin: 0 20px;
+        @media(max-width: 1100px) {
+            font-size: 2em;
+        }
+        @media(max-width: 600px) {
+            font-size: 1.2m;
+        }
 
     }
     

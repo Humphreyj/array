@@ -172,7 +172,7 @@ position: relative;
     @media(max-width: 1190px) {
         
         h1 {
-            font-size: 4em;
+            font-size: 3em;
             
         }
         .sub-title {
@@ -184,7 +184,7 @@ position: relative;
             width: 80%;
         }
         .social {
-            
+            display: none;
             top: 23%;
             left: 0%;
             color: white;

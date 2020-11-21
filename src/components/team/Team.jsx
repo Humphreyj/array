@@ -8,7 +8,7 @@ import TeamPhotos from './TeamPhotos';
 
 const TeamDiv = styled.div`
 background-color: #212121;
-height: 95vh;
+height: 100%;
 width: 100%;
 display: flex;
 justify-content: center;
@@ -28,7 +28,8 @@ align-items: flex-start;
 
 `;
 const Wrapper = styled.div`
-  height: 100%;
+min-height: calc(100vh - 180px);
+background-color: #212121;
   
  
 `;

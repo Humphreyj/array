@@ -11,13 +11,12 @@ import RoadmapMain from '../roadmap/RoadmapMain';
 
 const RoadmapContainer = styled.div`
 background-color: #212121;
-height: 100%;
+
 
 display: flex;
 align-items: flex-start;
 justify-content: center;
 padding-top: 60px;
-padding-bottom: 5%;
 @media(max-width: 1440px) {
     padding-top: 50px;
 }
@@ -34,11 +33,11 @@ padding-bottom: 5%;
 
 `;
 const Wrapper = styled.div`
-  height: 95vh;
+  min-height: calc(100vh - 180px);
   width: 100%;
   position: relative;
   
-  background-color: #f5f5f5;
+  background-color: #212121;
   ul {
     margin: 0;
     padding: 0;
