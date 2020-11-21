@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 import RoadmapIntro from '../roadmap/RoadmapIntro';
 import RoadmapMain from '../roadmap/RoadmapMain';
-import Footer from '../footer/Footer';
+
 
 
 const RoadmapContainer = styled.div`
