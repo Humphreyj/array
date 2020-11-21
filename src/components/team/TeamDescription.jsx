@@ -105,7 +105,7 @@ margin-top: 10px;
             width: 80%;
         }
         .social {
-            top: 30%;
+            top: 28%;
         }
     }
     //max-width: 1920px

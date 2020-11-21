@@ -14,7 +14,7 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 background-color: #121212;
-margin-top: 4%;
+margin-top: 3%;
 width: 30%;
 scrollbar-color: rgba(255, 255, 255, 0.4);
   scrollbar-width: thin;
