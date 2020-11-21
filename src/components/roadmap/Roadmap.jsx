@@ -6,15 +6,18 @@ import { motion } from "framer-motion";
 
 import RoadmapIntro from '../roadmap/RoadmapIntro';
 import RoadmapMain from '../roadmap/RoadmapMain';
+import Footer from '../footer/Footer';
 
 
 const RoadmapContainer = styled.div`
 background-color: #212121;
-height: 100vh;
+height: 100%;
+
 display: flex;
 align-items: flex-start;
 justify-content: center;
 padding-top: 60px;
+padding-bottom: 5%;
 @media(max-width: 1440px) {
     padding-top: 50px;
 }
@@ -31,8 +34,9 @@ padding-top: 60px;
 
 `;
 const Wrapper = styled.div`
-  height: 100%;
+  height: 95vh;
   width: 100%;
+  position: relative;
   
   background-color: #f5f5f5;
   ul {
@@ -67,7 +71,10 @@ const Roadmap = () => {
               <RoadmapIntro />
               <RoadmapMain />
             </RoadmapContainer>
+            
+            
         </Wrapper>
+        
         </motion.div>
         
     );

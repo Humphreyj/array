@@ -7,12 +7,14 @@ import BottomRight from './BottomRight';
 import bigLogo from '../../assets/img/logoWithText.PNG';
 import chart from '../../assets/img/arraySplashChart.PNG';
 
+
+
 const SplashDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    padding-bottom: 200px;
+    
     
 
     @media(max-width: 500px) {
@@ -144,7 +146,7 @@ const Row = styled.div`
 
     &.phase {
         margin-top: 120px;
-        justify-content: center;
+        
         
         .phase-hexagon {
             
@@ -175,19 +177,23 @@ const Row = styled.div`
                 width: 95%;
                 margin-left: 7%;
                 margin-top: 4%;
-                padding: 10px 0;
+                padding: 5px 0;
+                
 
                 .date-left {
                     background-color: #121212;
                     width: 75%;
                     margin-left: 1%;
+
                     height: 5.5em;
+                    padding: 20px 0;
                 }
                 .date-right {
-                    width: 20%;
+                    width: 17%;
                     h1 {
                         font-size: 5.5em;
-                        margin: 5px;
+                        margin: -10px 0 0 0;
+                        
                     }
                 }
 
@@ -195,6 +201,39 @@ const Row = styled.div`
 
             }
 
+        }
+
+        &.two {
+            .phase-date {
+                .date-left {
+                    width: 10%;
+                }
+                .date-right {
+                    width: 17%;  
+                }
+            }
+        }
+
+        &.three {
+            .phase-date {
+                .date-left {
+                    
+                    width: 0%;
+                }
+                .date-right {
+                    width: 17%;      
+                }
+            }
+            }
+
+        &.four {
+            margin-bottom: 120px;
+            .phase-date {
+                .date-left {
+                    background-color: #212121;
+                    width: 75%;
+                }
+            }
         }
         @media(max-width: 3750px) {
             .phase-hexagon {
@@ -215,7 +254,7 @@ const Row = styled.div`
                         
                         h1 {
                             font-size: 5em;
-                            margin: 5px;
+                            
                         }
                     }                      
                 }
@@ -244,7 +283,7 @@ const Row = styled.div`
                         
                         h1 {
                             font-size: 3.6em;
-                            margin: 5px;
+                            
                         }
                     }                      
                 }
@@ -272,7 +311,7 @@ const Row = styled.div`
                         
                         h1 {
                             font-size: 3em;
-                            margin: 5px;
+                            
                         }
                     }                      
                 }
@@ -295,14 +334,14 @@ const Row = styled.div`
                 }
                 .phase-date {
                     .date-left {
-                        margin: 5px;
+                        
                         height: 2.6em;
                     }
                     .date-right {
                         
                         h1 {
                             font-size: 2.6em;
-                            margin: 5px;
+                            
                         }
                     }                      
                 }
@@ -331,7 +370,7 @@ const Row = styled.div`
                         
                         h1 {
                             font-size: 2.6em;
-                            margin: 5px;
+                            
                         }
                     }                      
                 }
@@ -361,7 +400,7 @@ const Row = styled.div`
                         width: 18%;
                         h1 {
                             font-size: 2.2em;
-                            margin: 5px;
+                            
                         }
                     }                      
                 }
@@ -391,7 +430,7 @@ const Row = styled.div`
                         width: 18%;
                         h1 {
                             font-size: 2em;
-                            margin: 5px;
+                            
                         }
                     }                      
                 }
@@ -422,7 +461,7 @@ const Row = styled.div`
                         width: 18%;
                         h1 {
                             font-size: 2em;
-                            margin: 5px;
+                            
                         }
                     }                      
                 }
@@ -444,114 +483,24 @@ const Row = styled.div`
                     }
                 }
                 .phase-date {
+                    width: 93%;
                     .date-left {
                         width: 75%;
                         height: 1.2em;
                     }
                     .date-right {
-                        width: 25%;
+                        width: 18%;
                         h1 {
                             font-size: 1.2em;
-                            margin: 5px;
+                            
                         }
                     }                      
                 }
             }
         }
+        //max-width 1100px
 
-        &.two {
-    
-            .phase-date {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                background-color: #212121;
-                width: 95%;
-                margin-left: 7%;
-                margin-top: 4%;
-                padding: 10px 0;
-
-                .date-left {
-                    background-color: #121212;
-                    width: 10%;
-                    
-                    
-                }
-                .date-right {
-                    width: 20%;
-                    h1 {
-                       
-                        margin: 5px;
-                    }
-                }
-
-                
-
-            }
-
-        }
-        &.three {
-            .phase-date {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                background-color: #212121;
-                width: 95%;
-                margin-left: 7%;
-                margin-top: 4%;
-                padding: 10px 0;
-
-                .date-left {
-                    background-color: #212121;
-                    width: 75%;
-                    
-                    
-                }
-                .date-right {
-                    width: 20%;
-                    h1 {
-                        
-                        margin: 5px;
-                    }
-                }
-
-                
-
-            }
-
-                
-
-            }
-        &.four {
-            .phase-date {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                background-color: #212121;
-                width: 95%;
-                margin-left: 7%;
-                margin-top: 4%;
-                padding: 10px 0;
-
-                .date-left {
-                    background-color: #212121;
-                    width: 75%;
-                    
-                    
-                }
-                .date-right {
-                    width: 20%;
-                    h1 {
-                        
-                        margin: 5px;
-                    }
-                }
-
-                
-
-            }
-            
-        }
+        
        
     }
     //phase
@@ -691,7 +640,7 @@ const Splash = () => {
                 </Row>
             
             
-            
+           
         </SplashDiv>
         </motion.div>
         

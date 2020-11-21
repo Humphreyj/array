@@ -89,20 +89,22 @@ const teamData = [
     {
         id: 1,
         name: 'Zack Rowland',
-        desc: 'Data  Scientist, Citrix',
+        desc: 'Data  Scientist ',
+        subDesc: "Citrix",
         img: zack
     },
     {
         id: 2,
         name: 'Joshua Lapidus',
-        desc: 'Project Manager, previously at Consensys',
+        desc: 'Operations ',
+        subDesc: "Consensys",
         img: joshua
     },
     
     {
         id: 3,
         name: 'Gavin Nicholson',
-        desc: 'Marketing',
+        desc: 'Operations',
         img: gavin
         
     },
@@ -115,7 +117,7 @@ const teamData = [
     {
         id: 5,
         name: 'Bill',
-        desc: '',
+        desc: 'Solidity Developer',
         img: bill
     },
     

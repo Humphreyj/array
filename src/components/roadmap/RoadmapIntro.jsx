@@ -8,7 +8,7 @@ flex-direction: column;
 align-items: flex-start;
 justify-content: flex-start;
 color: white;
-width: 35%;
+width: 30%;
 padding-left: 100px;
 margin-top: -25px;
 height: 70vh;
@@ -16,7 +16,7 @@ position: relative;
 
     h1 {
         font-size: 6em;
-        margin: 0;
+        margin: 10px 0 0 0;
     }
     .sub-title {
         font-size: 2.2em;
@@ -57,6 +57,27 @@ position: relative;
                 font-size: 3.3em;
                 margin: 0 20px;
         
+            }
+        }
+        @media(min-width: 2700px) {
+            h1 {
+                 font-size: 8em;
+            }
+            .sub-title {
+                font-size: 4em;
+            }
+            p {
+                font-size: 3em;
+            }
+            .social {
+                .title {
+                    font-size: 4em;
+                }
+                .social-links {
+                    .fab {
+                        font-size: 4.5em;
+                    }
+                }
             }
         }
         @media(max-width: 1920px) {
@@ -119,7 +140,7 @@ position: relative;
     //max-width 1440px
     @media(max-width: 1280px) {
         h1 {
-            font-size: 4em;
+            font-size: 3em;
             
         }
         .sub-title {

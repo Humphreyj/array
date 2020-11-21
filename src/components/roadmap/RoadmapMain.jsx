@@ -10,7 +10,7 @@ align-items: flex-start;
 justify-content: flex-start;
 background-color: #121212;
 height: 70vh;
-width: 65%;
+width: 55%;
 padding-top: 40px;
 color: white;
 scrollbar-color: rgba(255, 255, 255, 0.4);
@@ -71,7 +71,7 @@ p {
 @media(max-width: 1920px) {
     p {
         margin: 5px auto;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     .phase {
         font-size: 1.2em;
@@ -98,16 +98,16 @@ p {
         top: 12%;
        
         img {
-            width: 95%;
+            width: 90%;
         }
     }
 }
 //max-width 1440px
 @media(max-width: 1280px) {
     p {
-        font-size: 1em;
-        width: 90%;
-        margin: 3px auto;
+        font-size: .9em;
+        width: 92%;
+        margin: 2px auto;
     }
     .phase {
         font-size: 1em;
