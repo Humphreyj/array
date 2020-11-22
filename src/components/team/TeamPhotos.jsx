@@ -213,9 +213,9 @@ img {
 const TeamPhotos = () => {
     return (
         <Photos>
-            {teamData.map(item => {
+            {teamData.map((item) => {
                 return (
-                    <TeamMember className="team-member">
+                    <TeamMember key={item.name} className="team-member">
                         <img src={item.img} alt="item.name"/>
                         <div className="team-member-details">
                             <h4>{item.name}</h4>

@@ -11,7 +11,7 @@ import littleLogo from '../../assets/img/arraylogofinal.png';
 
 const Navigation = ({history,location}) => {
     
-    const {toggleSidedrawer,open,page,setPage,routes}=useContext(UIC)
+    const {toggleSidedrawer,open,page,setPage,routes,goTeam}=useContext(UIC)
     const goHome = () => {
         setPage({...page,home: true, roadmap: false, team: false,prev:3, curr: 0})
         history.push({
@@ -31,17 +31,11 @@ const Navigation = ({history,location}) => {
         })
         sessionStorage.setItem('route', 'roadmap')
     }
-    const goTeam = () => {
-            setPage({...page,home: false, roadmap: false, team: true,prev:1, curr: 2})
-        history.push({
-            pathname: routes[2],
-        })
-        sessionStorage.setItem('route','team')
-    }
+    
     return (
         <Nav className="header">
             <Link to='/'>
-                <img id='top-logo' src={littleLogo} alt="array logo"/>
+                <img onClick={goHome} id='top-logo' src={littleLogo} alt="array logo"/>
             </Link>
             <nav>
                 <Link to='/' onClick={goHome} className={page.home ? "nav-link bordered" : "nav-link"}>array.finance</Link>

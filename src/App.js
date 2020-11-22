@@ -75,7 +75,7 @@ background-color: #212121;
 
 
 
-function App({location}) {
+function App({location,history}) {
   const [open, setOpen] =useState(false)
   const [page,setPage] = useState({
     home: true,
@@ -99,6 +99,14 @@ function App({location}) {
     }
     // eslint-disable-next-line
   },[])
+
+  const goTeam = () => {
+    setPage({...page,home: false, roadmap: false, team: true,prev:1, curr: 2})
+  history.push({
+      pathname: routes[2],
+  })
+  sessionStorage.setItem('route','team')
+  }
 
   
 
@@ -167,7 +175,8 @@ function App({location}) {
             routes,
             variants,
             pageTransition,
-            pageStyle}}>
+            pageStyle,
+            goTeam}}>
         <Appy className="App">
         <div className={open ? 'sidedrawer open': 'sidedrawer'}>
           <div className='logo'>

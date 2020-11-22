@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import UIC from '../../context/Context';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
@@ -43,20 +44,23 @@ const Right = styled.div`
             width: 75%;
             font-size: 1.8em;
         }
-        button {
-            background: transparent;
-            color: white;
-            font-size: 2em;
-            padding: 1%;
-            cursor: pointer;
-            border: 3px solid white;
-            position: relative;
-            transition: all 300ms ease;
-
-            &:hover {
-                top: 2px;
-                border: 5px solid white;
-                font-size: 2.2em;
+        a {
+            width: 35%;
+            button {
+                background: transparent;
+                color: white;
+                font-size: 2em;
+                padding: 1%;
+                cursor: pointer;
+                border: 3px solid white;
+                position: relative;
+                transition: all 300ms ease;
+    
+                &:hover {
+                    top: 2px;
+                    border: 5px solid white;
+                    font-size: 2.2em;
+                }
             }
         }
     }
@@ -226,6 +230,9 @@ const Right = styled.div`
                         font-size: 1em;
                         width: 95%;
                     }
+                    a {
+                        width: 35%;
+                    }
                 }
             }
             .bottom {
@@ -253,6 +260,12 @@ const Right = styled.div`
                     p {
                         font-size: 1em;
                         width: 95%;
+                    }
+                    a {
+                        width: 40%;
+                        button {
+                            font-size: 1.5em;
+                        }
                     }
                 }
             }
@@ -368,6 +381,42 @@ const Right = styled.div`
             
         }
         //max-width: 768px
+        @media(max-width: 600px) {
+            .top {
+                .top-content {
+                    
+                    h1 {
+                        font-size: 1.5em;
+                        width: 80%;
+                    }
+                    h4 {
+                        font-size: 1.2em;
+                        text-align: center;
+                        width: 75%;
+                        margin-top: 10px;
+                    }
+                    p {
+                        font-size: 1em;
+                        width: 95%;
+                    }
+                    a {
+                        width: 60%;
+                        button {
+                            
+                        }
+                    }
+                }
+            }
+            .bottom {
+                
+                .bottom-content {
+                    h4 {
+                        font-size: 2em;
+                        width: 75%;
+                    }
+                }
+            }
+        }
         
 
   
@@ -376,6 +425,7 @@ const Right = styled.div`
 `;
 
 const BottomRight = () => {
+    const {goTeam} = useContext(UIC);
     return (
         
             <Right>
@@ -384,12 +434,12 @@ const BottomRight = () => {
                         <h1>Array is the ultimate DeFi protocol.</h1>
                         <h4>DeFi isn’t going away anytime soon.</h4>
                         <p>Keep your exposure to ETH and WBTC while taking advantage of the explosive growth  of the DeFi space. Park your crypto and have Array do the protocol-hopping. Our smart contracts protect against sudden protocol failures through algorithmic diversification and a highly experienced team. </p>
-                        <Link to='/team'><button className="to-team">view our team</button></Link>
+                        <Link onClick={goTeam} to='/team'><button className="to-team">view our team</button></Link>
                     </div>
                 </div>
                 <div className="bottom">
                     <div className="bottom-content">
-                        <h4>Array is currently under construction</h4>
+                        <h4>Array is currently under construction.</h4>
                     </div>
                     
                 </div>
