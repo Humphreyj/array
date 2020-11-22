@@ -14,8 +14,12 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 background-color: #121212;
+clip-path: polygon(17% 0, 86% 0, 100% 8%, 100% 88%, 100% 100%, 13% 100%, 0 90%, 0 0);
 margin-top: 1%;
-width: 30%;
+width: 32%;
+padding-left: 1.5%;
+padding-top: 1%;
+padding-bottom: 1%;
 scrollbar-color: rgba(255, 255, 255, 0.4);
   scrollbar-width: thin;
   ::-webkit-scrollbar {

@@ -9,9 +9,10 @@ flex-direction: column;
 align-items: flex-start;
 justify-content: flex-start;
 background-color: #121212;
+clip-path: polygon(11% 0, 100% 0, 100% 8%, 100% 87%, 88% 100%, 13% 100%, 0 100%, 0 13%);
 height: 70vh;
 width: 55%;
-padding-top: 40px;
+padding-top: 3%;
 color: white;
 scrollbar-color: rgba(255, 255, 255, 0.4);
   scrollbar-width: thin;
@@ -52,10 +53,12 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position : relative;
-    top: 9%;
+    position: relative;
+    top: 6%;
+
    
     img {
+        margin-top: -2%;
         width: 95%;
     }
 }
