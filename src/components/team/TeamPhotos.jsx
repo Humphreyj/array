@@ -16,8 +16,8 @@ align-items: flex-start;
 background-color: #121212;
 clip-path: polygon(17% 0, 86% 0, 100% 8%, 100% 88%, 100% 100%, 13% 100%, 0 90%, 0 0);
 margin-top: 1%;
-width: 32%;
-padding-left: 1.5%;
+width: 25%;
+padding-left: 5%;
 padding-top: 1%;
 padding-bottom: 1%;
 scrollbar-color: rgba(255, 255, 255, 0.4);
@@ -47,10 +47,10 @@ scrollbar-color: rgba(255, 255, 255, 0.4);
  }
  
 @media(max-width: 1920px) {
-    width: 40%;
+    
 }
 @media(max-width: 1440px) {
-
+    width: 30%;
 }
 //max-width: 1440px;
 @media(max-width: 1280px) {
@@ -58,26 +58,28 @@ scrollbar-color: rgba(255, 255, 255, 0.4);
 }
 @media(max-width: 970px) {
     width: 80%;
-    height: 40vh;
+    margin-bottom: 10%;
     overflow-y: scroll;
+    pasdding-left: 1%;
     
 }
 //max-width: 970px
 @media(max-width: 500px) {
-    height: 60vh;
+   
     margin-top: 30px;
     width: 90%;
+    
     
 }
 //max-width 500px
 @media(max-width: 360px) {
-    height: 66vh;
+    
    
     
 }
 //max-width: 360px
 @media(max-width: 320px) {
-    height: 80vh;
+    
     
 }
 //max-width: 320px
@@ -93,22 +95,22 @@ const teamData = [
     {
         id: 1,
         name: 'Zack Rowland',
-        desc: 'Data  Scientist ',
+        desc: 'Senior Engineer ',
         subDesc: "Citrix",
         img: zack
     },
     {
         id: 2,
         name: 'Joshua Lapidus',
-        desc: 'Operations ',
-        subDesc: "Consensys",
+        desc: 'Operations',
+        subDesc: "Pool-Party | Opolis | Previously at Consensys",
         img: joshua
     },
     
     {
         id: 3,
         name: 'Gavin Nicholson',
-        desc: 'Operations',
+        desc: 'Marketing',
         img: gavin
         
     },
@@ -122,6 +124,7 @@ const teamData = [
         id: 5,
         name: 'Bill',
         desc: 'Solidity Developer',
+        subDesc: "Pool-Party | Peeps Democracy",
         img: bill
     },
     
@@ -132,7 +135,7 @@ display: flex;
 justify-content: flex-start;
 align-items: flex-start;
 margin:15px 0;
-padding-left: 34px;
+
 
 img {
     border: 4px solid white;
@@ -155,7 +158,7 @@ img {
         font-size: 1.8em;
     }
     .sub-desc {
-        font-size: 1.4em;
+        font-size: 1.2em;
         margin-top: 2px;
     }
 }
@@ -169,6 +172,9 @@ img {
     img {
         height: 150px;
         width: 150px;
+    }
+    .sub-desc {
+        font-size: 1em;
     }
 }
 //max-width: 2556px
@@ -186,15 +192,16 @@ img {
     }
     
     img {
-        height: 110px;
-        width: 110px;
+        height: 100px;
+        width: 100px;
     }
 }
 //max-width: 1920px
 @media(max-width: 1440px) {
+    margin: 12px 0;
     img {
-        height: 85px;
-        width: 85px;
+        height: 80px;
+        width: 80px;
     }
     .team-member-details {
         display: flex;
@@ -219,8 +226,8 @@ img {
 //max-width: 1440px
 @media(max-width: 1280px) {
     img {
-        height: 70px;
-        width: 70px;
+        height: 65px;
+        width: 65px;
     }
     .team-member-details {
         h4 {
@@ -235,6 +242,10 @@ img {
     }
 }
 //max-width: 1280px
+
+@media(max-width: 970px) {
+
+}
 @media(max-width: 540px) {
     height: 28vh;
     

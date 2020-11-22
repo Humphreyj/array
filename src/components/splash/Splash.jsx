@@ -589,7 +589,7 @@ const Splash = () => {
                     <div className="phase-hexagon">
                         <div className="phase-text">
                             <h1>Phase 1</h1>
-                            <p>Building off of Phase 0, Phase 1 comes with pre-built indexes that balance risk and reward potential from a selection of reputable DeFi assets. Using what was built on Phase 0, all assets will automatically be harvested and placed into respective profit sharing pools, and automatically rebalance based on market conditions, with easy exits to ETH, WBTC, or the equivalent proportion of the underlying assets.</p>
+                            <p>Building off of Phase 0, Phase 1 comes with pre-built indexes that balance risk and reward potential from a selection of reputable DeFi assets. All deposits will begin to be backed by Cover Protocol for insurance. Using what was built on Phase 0, all assets will automatically be harvested and placed into respective profit sharing pools. Arrays will automatically rebalance based on market conditions, with easy exits to ETH, WBTC, or the equivalent proportion of the underlying assets. </p>
                         </div>
 
                         <div className="phase-date">
@@ -608,7 +608,7 @@ const Splash = () => {
                     <div className="phase-hexagon">
                         <div className="phase-text">
                             <h1>Phase 2</h1>
-                            <p>Phase 2 introduces our smart algorithm, which autonomously rebalances based on a weighting system. Assets are weighed using metrics like market cap, liquidity, ROI, yield potential, and risk. These autonomous indexes will be deployed alongside all pre-existing contracts</p>
+                            <p>Phase 2 introduces our smart algorithm, which autonomously rebalances based on a weighting system. Assets are weighed using metrics like market cap, liquidity, ROI, yield potential, and risk. These autonomous indexes will be deployed alongside all pre-existing contracts.</p>
                         </div>
 
                         <div className="phase-date">
@@ -627,7 +627,7 @@ const Splash = () => {
                     <div className="phase-hexagon">
                         <div className="phase-text">
                             <h1>Phase 3</h1>
-                            <p>Phase 3 introduces user-built indexes. Pick any ERC-20 assets, balance your ideal porfolio, and Array can handle the rest. </p>
+                            <p>Phase 3 introduces user-built indexes. Pick any ERC-20 assets, balance your ideal porfolio, and Array can handle the rest. Build and share your Arrays while earning performance fees when other users follow your strategies. At this stage, Array will be a full-featured portfolio manager-- all while being completely decentralized and user-governed. </p>
                         </div>
 
                         <div className="phase-date">

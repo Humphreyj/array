@@ -184,7 +184,7 @@ function App({location,history}) {
           </div>
           <nav>
             <Link onClick={toggleSidedrawer} to='/'>array.finance</Link>
-            <Link onClick={toggleSidedrawer} to='/roadmap'>roadmap</Link>
+            {/* <Link onClick={toggleSidedrawer} to='/roadmap'>roadmap</Link> */}
             <Link onClick={toggleSidedrawer} to='/team'>team</Link>
           </nav>
         

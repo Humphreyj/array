@@ -12,10 +12,10 @@ const Footsies = styled.footer`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 100px;
+    height: 80px;
     position: relative;
     bottom: 0;
-    padding: 0 3%;
+    padding: 0 1.5%;
     background-color: #121212;
     
     
@@ -71,6 +71,35 @@ const Footsies = styled.footer`
         }
     }
     //max-width: 2556px
+    @media(max-width: 1920px) {
+        .logo {
+            img {
+                height: 60px;
+                width: 60px;
+            }
+        }
+        .flavor {
+            h4 {
+                font-size: 1.6em;
+            }
+        }
+    }
+    //max-width: 1920px
+
+    @media(max-width: 1440px) {
+        .logo {
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+        .flavor {
+            h4 {
+                font-size: 1.4em;
+            }
+        }
+    }
+    //max-width: 1440px
 
     @media(max-width: 1280px) {
         .logo {

@@ -14,6 +14,7 @@ const SocialDiv = styled.div`
         width: 33%;
         align-items: center;
         justify-content: space-evenly;
+        margin-left: 40px;
         
     }
         .fab {
@@ -27,6 +28,14 @@ const SocialDiv = styled.div`
             @media(max-width: 2556px) {
                 font-size: 3em;
             }
+            @media(max-width: 1920px) {
+                font-size: 2.5em;
+                
+            }
+            @media(max-width: 1440px) {
+                font-size: 2em;
+                
+            }
             @media(max-width: 1280px) {
                 font-size: 1.8em;
             }
@@ -39,7 +48,10 @@ const SocialDiv = styled.div`
 
         }
     
-    
+        @media(max-width: 1920px) {
+            margin-left: 50px;
+            
+        }
     
 `;
 

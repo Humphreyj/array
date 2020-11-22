@@ -20,17 +20,17 @@ const Navigation = ({history,location}) => {
         sessionStorage.setItem('route', 'home')
         
     }
-    const goRoadmap = () => {
-        if (page.curr ===2) {
-            setPage({...page,home: false, roadmap: true, team: false,prev:2,curr: 1})
-        }else {
-            setPage({...page,home: false, roadmap: true, team: false,prev:0,curr: 1})
-        }
-        history.push({
-            pathname: routes[1],
-        })
-        sessionStorage.setItem('route', 'roadmap')
-    }
+    // const goRoadmap = () => {
+    //     if (page.curr ===2) {
+    //         setPage({...page,home: false, roadmap: true, team: false,prev:2,curr: 1})
+    //     }else {
+    //         setPage({...page,home: false, roadmap: true, team: false,prev:0,curr: 1})
+    //     }
+    //     history.push({
+    //         pathname: routes[1],
+    //     })
+    //     sessionStorage.setItem('route', 'roadmap')
+    // }
     
     return (
         <Nav className="header">
@@ -39,7 +39,7 @@ const Navigation = ({history,location}) => {
             </Link>
             <nav>
                 <Link to='/' onClick={goHome} className={page.home ? "nav-link bordered" : "nav-link"}>array.finance</Link>
-                <Link to='/roadmap' onClick={goRoadmap} className={page.roadmap ? "nav-link bordered" : "nav-link"}>roadmap</Link>
+                {/* <Link to='/roadmap' onClick={goRoadmap} className={page.roadmap ? "nav-link bordered" : "nav-link"}>roadmap</Link> */}
                 {/* <Link to='/faq' className="nav-link">faq</Link> */}
                 <Link to='/team' onClick={goTeam} className={page.team ? "nav-link bordered" : "nav-link"}>team</Link>
             </nav>
@@ -91,6 +91,19 @@ const Nav = styled.div`
         padding-left: 100px;
     }
     //max-width: 2000px
+    @media(max-width: 1440px) {
+        padding-left: 100px;
+        img {
+            height: 50px;
+            width: 50px;
+        }
+        nav {
+            a {
+                font-size: 2em;
+            }
+        }
+    }
+    //max-width: 1440px
 
     @media(max-width: 970px) {
         padding-left: 50px;

@@ -9,7 +9,8 @@ import TeamPhotos from './TeamPhotos';
 const TeamDiv = styled.div`
 background-color: #212121;
 height: 100%;
-width: 100%;
+width: 95%;
+margin: 0 auto;
 display: flex;
 justify-content: center;
 align-items: flex-start;

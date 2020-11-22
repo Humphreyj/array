@@ -60,12 +60,18 @@ margin-top: -1%;
         }
     }
     @media(min-width: 2800px) {
+        h1 {
+            margin-top: 6%;
+        }
+        p {
+            width: 50%;
+        }
         .social {
             display: flex;
             flex-direction: column;
             align-items: center;
             position: relative;
-            top: 41%;
+            top: 10%;
             left: 0%;
             color: white;
             .title {
@@ -93,9 +99,10 @@ margin-top: -1%;
     @media(max-width: 2556px) {
         p {
             width: 80%;
+            font-size: 1.8em;
         }
         .social {
-            top: 44%;
+            top: 10%;
         }
     }
     //max-width: 2556px
@@ -103,9 +110,10 @@ margin-top: -1%;
     @media(max-width: 1920px) {
         p {
             width: 80%;
+            font-size: 1.2em;
         }
         .social {
-            top: 28%;
+            top: 8%;
         }
     }
     //max-width: 1920px
@@ -123,20 +131,21 @@ margin-top: -1%;
             font-size: 5em;
         }
         .sub-heading {
-            font-size: 1.6em;
+            font-size: 1.4em;
         }
         p {
             width: 80%;
-            font-size: 1.9em;
+            font-size: 1em;
         }
         .social {
-            top: 20%;
+            top: 5%;
             .title {
-                font-size: 2em;
+                font-size: 1.5em;
             }
             .social-links {
+                margin-top: 20px;
                 .fab {
-                    font-size: 2.8em;
+                    font-size: 2em;
                 }
             }
         }
@@ -149,9 +158,10 @@ margin-top: -1%;
         }
         p {
             width: 85%;
+            font-size: .9em;
         }
         .social {
-            top: 10%;
+            top: 0%;
             
             .title {
                 font-size: 1.5em;
@@ -179,7 +189,7 @@ margin-top: -1%;
     //max-width: 970px;
    
     @media(max-width: 768px) {
-        height: 26vh;
+        height: 34vh;
         width: 100%;
         p {
             width: 80%;
@@ -190,14 +200,14 @@ margin-top: -1%;
 
 }
     @media(max-width: 605px) {
-        height: 30vh;
+        height: 40vh;
         margin-top: 0px;
         width: 100%;
         
         //max-width: 600px
     }
     @media(max-width: 540px) {
-        height: 22vh;
+        height: 90vh;
         margin-top: 0px;
         width: 100%;
         h1 {
@@ -267,7 +277,9 @@ const TeamDescription = () => {
         <Description>
             <h1>Team</h1>
             <h4 className='sub-heading'>array.finance</h4>
-            <p>DeFi is just getting started, but the Array team has the experience needed to build the next generation of protocols.</p>
+            <p>The Array team has the experience needed to build the next generation of protocols. With experience in industry-leading companies and DeFi experience since 2017, the Array team has the knowledge to build effective and secure asset management contracts. Implementing strategies to protect against flash loans and other code oversights is our number one priority going forwards.
+                </p>
+            <p>All code will be professionally audited by multiple parties before phases officially launch, and additional audits will be performed before pushing new code to mainnet.</p>
 
             <div className="social">
                 <h1 className="title">follow for updates</h1>
