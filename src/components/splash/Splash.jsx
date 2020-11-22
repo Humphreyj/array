@@ -204,6 +204,7 @@ const Row = styled.div`
         }
 
         &.two {
+            margin-top: 80px;
             .phase-date {
                 .date-left {
                     width: 10%;
@@ -215,6 +216,7 @@ const Row = styled.div`
         }
 
         &.three {
+            margin-top: 80px;
             .phase-date {
                 .date-left {
                     
@@ -227,6 +229,7 @@ const Row = styled.div`
             }
 
         &.four {
+            margin-top: 80px;
             margin-bottom: 120px;
             .phase-date {
                 .date-left {
@@ -568,7 +571,7 @@ const Splash = () => {
                     <div className="phase-hexagon">
                         <div className="phase-text">
                             <h1>Phase 0</h1>
-                            <p>All work has to start somewhere. Phase 0 includes the initial groundwork for the Array ecosystem.  Phase 0 allows users to deposit any tokens that can be farmed for either PICKLE or FARM, and automatically transfers the accumulated yield into the respective profit sharing pool, saving gas and increasing ROI. It also introduces the Array governance token, the ARRAY/DAI Uniswap pool, and staking opportunities for early adopters. Array will be generated on top of any existing yield, as yet another way to increase ROI and reward early adopters.</p>
+                            <p>All work has to start somewhere. Phase 0 includes the initial groundwork for the Array ecosystem.  Phase 0 allows users to deposit any tokens that can be farmed for either PICKLE or FARM, and automatically transfers the accumulated yield into the respective profit sharing pool, saving gas and increasing ROI. It also introduces the Array governance token, the ARRAY/DAI Uniswap pool, and staking opportunities for early adopters. Array will be generated on top of any existing yield.</p>
                         </div>
 
                         <div className="phase-date">

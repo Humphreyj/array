@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import UIC from '../../context/Context';
 import styled from 'styled-components';
 
 //logo
@@ -133,12 +134,14 @@ const Footsies = styled.footer`
 `;
 
 const Footer = () => {
+    const {page} = useContext(UIC);
     return (
         <Footsies>
             <div className="logo">
-                <a href="#top-logo">
+                {page.home ? <a href="#top-logo">
                 <img src={logo} alt="Array logo"/>
-                </a>
+                </a> : <img src={logo} alt="Array logo"/>
+                }
                 
             </div>
             <Social />
