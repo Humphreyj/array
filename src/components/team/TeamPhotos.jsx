@@ -16,7 +16,7 @@ align-items: flex-start;
 background-color: #121212;
 clip-path: polygon(17% 0, 86% 0, 100% 8%, 100% 88%, 100% 100%, 13% 100%, 0 90%, 0 0);
 margin-top: 1%;
-width: 25%;
+width: 28%;
 padding-left: 5%;
 padding-top: 1%;
 padding-bottom: 1%;
