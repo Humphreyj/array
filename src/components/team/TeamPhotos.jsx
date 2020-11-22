@@ -14,7 +14,7 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 background-color: #121212;
-margin-top: 3%;
+margin-top: 1%;
 width: 30%;
 scrollbar-color: rgba(255, 255, 255, 0.4);
   scrollbar-width: thin;
@@ -50,7 +50,7 @@ scrollbar-color: rgba(255, 255, 255, 0.4);
 }
 //max-width: 1440px;
 @media(max-width: 1280px) {
-height: 80vh;
+
 }
 @media(max-width: 970px) {
     width: 80%;
@@ -147,8 +147,12 @@ img {
 
     }
     p {
-        margin: 5px 20px;
+        margin: 2px 20px;
         font-size: 1.8em;
+    }
+    .sub-desc {
+        font-size: 1.4em;
+        margin-top: 2px;
     }
 }
 @media(min-width: 2700px) {
@@ -157,17 +161,36 @@ img {
         width: 200px;
     }
 }
-@media(max-width: 1920px) {
+@media(max-width: 2556px) {
     img {
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
+    }
+}
+//max-width: 2556px
+@media(max-width: 1920px) {
+    .team-member-details {
+        h4 {
+            font-size: 1.8em;
+        }
+        p {
+            font-size: 1.4em;
+        }
+        .sub-desc {
+            font-size: .9em;
+        }
+    }
+    
+    img {
+        height: 110px;
+        width: 110px;
     }
 }
 //max-width: 1920px
 @media(max-width: 1440px) {
     img {
-        height: 80px;
-        width: 80px;
+        height: 85px;
+        width: 85px;
     }
     .team-member-details {
         display: flex;
@@ -177,12 +200,16 @@ img {
         color: white;
         h4 {
             margin: 0 20px;
-            font-size: 1.8em;
+            font-size: 1.2em;
     
         }
         p {
-            margin: 5px 20px;
-            font-size: 1.4em;
+            margin: 2px 20px;
+            font-size: 1em;
+        }
+        .sub-desc {
+            .font-size: .9em;
+            margin-top: 2px;
         }
 }
 //max-width: 1440px
@@ -193,10 +220,13 @@ img {
     }
     .team-member-details {
         h4 {
-            font-size: 1.3em;
+            font-size: 1.1em;
         }
         p {
             font-size: 1em;
+        }
+        .sub-desc {
+            font-size: .6em;
         }
     }
 }
@@ -220,6 +250,7 @@ const TeamPhotos = () => {
                         <div className="team-member-details">
                             <h4>{item.name}</h4>
                             <p>{item.desc}</p>
+                            <p className="sub-desc">{item.subDesc}</p>
                         </div>
                     </TeamMember>
                 )

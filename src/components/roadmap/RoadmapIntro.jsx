@@ -184,7 +184,7 @@ position: relative;
             width: 80%;
         }
         .social {
-            display: none;
+            
             top: 23%;
             left: 0%;
             color: white;
@@ -251,6 +251,7 @@ position: relative;
     @media(max-width:540px) {
         height: 36vh;
         .social {
+            display: none;
             top: 195%;
             .title {
                 font-size: 1.8em;

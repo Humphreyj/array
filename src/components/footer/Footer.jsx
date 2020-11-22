@@ -37,6 +37,55 @@ const Footsies = styled.footer`
             font-size: 1.4em;
         }
     }
+    @media(min-width: 3800px) {
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            img {
+                height: 80px;
+                width: 80px;
+            }
+        }
+    
+        .flavor {
+            h4 {
+                color: white;
+                font-size: 2.4em;
+            }
+        }
+    }
+    @media(max-width: 2556px) {
+        .logo {
+            img {
+                height: 60px;
+                width: 60px;
+            }
+        }
+        .flavor {
+            h4 {
+                font-size: 2em;
+            }
+        }
+    }
+    //max-width: 2556px
+
+    @media(max-width: 1280px) {
+        .logo {
+            img {
+                height: 45px;
+                width: 45px;
+            }
+        }
+        .flavor {
+            h4 {
+                font-size: 1em;
+            }
+        }
+    }
+    //max-width: 2556px
+
     @media(max-width: 1100px) {
         .logo {
             img {
@@ -50,6 +99,23 @@ const Footsies = styled.footer`
             }
         }
     }
+    //max-width: 1100px
+
+    @media(max-width: 970px) {
+        .logo {
+            img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+        .flavor {
+            h4 {
+                font-size: 1em;
+            }
+        }
+    }
+    //max-width: 970px
+
     @media(max-width: 600px) {
         .logo {
             img {

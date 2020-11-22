@@ -16,9 +16,9 @@ background-color: #212121;
 display: flex;
 align-items: flex-start;
 justify-content: center;
-padding-top: 60px;
+padding-top: 30px;
 @media(max-width: 1440px) {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 @media(max-width: 970px) {
     padding-top: 0;

@@ -11,7 +11,7 @@ height: 70vh;
 align-items: center;
 justify-content: flex-start;
 color: white;
-margin-top: 10px;
+margin-top: -1%;
 
 
     h1 {
@@ -151,14 +151,15 @@ margin-top: 10px;
             width: 85%;
         }
         .social {
-            top: 13%;
+            top: 10%;
             
             .title {
-                font-size: 2em;
+                font-size: 1.5em;
             }
             .social-links {
+                margin-top: 20px;
                 .fab {
-                    font-size: 2.5em;
+                    font-size: 2em;
                 }
             }
         }
@@ -171,42 +172,19 @@ margin-top: 10px;
             width: 80%;
         }
         .social {
-            position: absolute;
-            width: 80%;
-            top: 80%;
-            left: 10%;
-            .title {
-                font-size: 2em;
-                
-            }
-            .social-links {
-                width: 50%;
-        
-            }
+            display: none;
+            
         }
     }
     //max-width: 970px;
-
+   
     @media(max-width: 768px) {
         height: 26vh;
         width: 100%;
         p {
             width: 80%;
         }
-        .social {
-            position: absolute;
-            width: 80%;
-            top: 78%;
-            left: 10%;
-            .title {
-                font-size: 2em;
-                
-            }
-            .social-links {
-                width: 50%;
         
-            }
-        }
     }
     //max-width: 768px;
 
@@ -215,12 +193,7 @@ margin-top: 10px;
         height: 30vh;
         margin-top: 0px;
         width: 100%;
-        .social {
-            top: 80%;
-            .title {
-                font-size: 1.8em;
-            }
-        }
+        
         //max-width: 600px
     }
     @media(max-width: 540px) {
@@ -238,17 +211,7 @@ margin-top: 10px;
             font-size: 1.5em;
             margin-top: 0;
         }
-        .social {
-            top: 76%;
-            .title {
-                font-size: 1.4em;
-            }
-            .social-links {
-                .fab {
-                    font-size: 1.8em;
-                }
-            }
-        }
+       
         //max-width: 540px
         //pretty much to explicityly handle the surface duo
     
@@ -256,57 +219,32 @@ margin-top: 10px;
     height: 18vh;
     margin-top: 0px;
     width: 100%;
-    .social {
-        top: 82%;
-        .title {
-            font-size: 1.8em;
-        }
+    
     }
     //max-width: 500px
 
     @media(max-width: 414px) {
         height: 32vh;
-        .social {
-            top: 83%;
-            .title {
-                font-size: 1.8em;
-            }
-        }
+       
         
     }
     //max-width: 411px
     @media(max-width: 380px) {
         height: 36vh;
-        .social {
-            top: 83%;
-            .title {
-                font-size: 1.8em;
-            }
-        }
+      
         
     }
     //max-width: 380px
 
     @media(max-width: 360px) {
         height: 42vh;
-        .social {
-            top: 83%;
-            .title {
-                font-size: 1.8em;
-            }
-        }
+    
         
     }
     //max-width: 360px
     @media(max-width: 320px) {
         height: 60vh;
-        .social {
-            top: 83%;
-            .title {
-                font-size: 1.6em;
-            }
-            
-        }
+    
         
     }
     //max-width: 320px
@@ -314,13 +252,7 @@ margin-top: 10px;
     @media(max-width: 280px) {
         height: 50vh;
         
-        .social {
-            top: 83%;
-            .title {
-                font-size: 1.4em;
-            }
-            
-        }
+     
         
     }
     //max-width: 280px
