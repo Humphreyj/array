@@ -60,7 +60,8 @@ scrollbar-color: rgba(255, 255, 255, 0.4);
     width: 80%;
     margin-bottom: 10%;
     overflow-y: scroll;
-    pasdding-left: 1%;
+    padding-left: 8%;
+    padding-bottom: 5%;
     
 }
 //max-width: 970px
@@ -247,10 +248,13 @@ img {
 
 }
 @media(max-width: 540px) {
-    height: 28vh;
     
+}
     //max-width: 540px
-
+    @media(max-width: 360px) {
+        ;
+    }
+        //max-width: 360px
 
 
 `;
