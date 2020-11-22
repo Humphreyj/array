@@ -59,7 +59,7 @@ margin-top: -1%;
 
         }
     }
-    @media(min-width: 2800px) {
+    @media(min-width: 2700px) {
         h1 {
             margin-top: 6%;
         }
@@ -75,7 +75,7 @@ margin-top: -1%;
             left: 0%;
             color: white;
             .title {
-                font-size: 3.5em;
+                font-size: 3em;
                 border: 3px solid white;
                 padding: 1px 5px;
             }
@@ -96,10 +96,48 @@ margin-top: -1%;
                 }
             }
     }
+    @media(max-width: 2700px) {
+        h1 {
+            margin-top: 6%;
+        }
+        p {
+            width: 70%;
+            font-size: 1.6em;
+        }
+        .social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            top: 5%;
+            left: 0%;
+            color: white;
+            .title {
+                font-size: 2.5em;
+                border: 3px solid white;
+                padding: 1px 5px;
+            }
+        
+            .social-links {
+                display: flex;
+                width: 100%;
+                margin-top: 30px;
+                margin-right: 10px;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+                .fab {
+                    color: white;
+                    font-size: 3em;
+                    margin: 0 20px;
+        
+                }
+            }
+    }
     @media(max-width: 2556px) {
         p {
             width: 80%;
-            font-size: 1.8em;
+            font-size: 1.4em;
         }
         .social {
             top: 10%;
@@ -234,33 +272,40 @@ margin-top: -1%;
     //max-width: 500px
 
     @media(max-width: 414px) {
-        height: 32vh;
+        height: 105vh;
        
         
     }
     //max-width: 411px
     @media(max-width: 380px) {
-        height: 36vh;
+        height: 115vh;
+      
+        
+    }
+    //max-width: 380px
+
+    @media(max-width: 380px) {
+        height: 135vh;
       
         
     }
     //max-width: 380px
 
     @media(max-width: 360px) {
-        height: 42vh;
+        height: 148vh;
     
         
     }
     //max-width: 360px
     @media(max-width: 320px) {
-        height: 60vh;
+        height: 155vh;
     
         
     }
     //max-width: 320px
 
     @media(max-width: 280px) {
-        height: 50vh;
+        
         
      
         

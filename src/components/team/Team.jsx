@@ -29,7 +29,7 @@ align-items: flex-start;
 
 `;
 const Wrapper = styled.div`
-min-height: calc(100vh - 180px);
+min-height: calc(100vh - 160px);
 background-color: #212121;
   
  
