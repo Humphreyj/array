@@ -97,23 +97,7 @@ const teamData = [
         id: 1,
         name: 'Zack Rowland',
         desc: 'Senior Engineer ',
-        subDesc: "Citrix",
         img: zack
-    },
-    {
-        id: 2,
-        name: 'Joshua Lapidus',
-        desc: 'Operations',
-        subDesc: "Pool-Party | Opolis | Previously at Consensys",
-        img: joshua
-    },
-    
-    {
-        id: 3,
-        name: 'Gavin Nicholson',
-        desc: 'Marketing',
-        img: gavin
-        
     },
     {
         id: 4,
@@ -122,10 +106,23 @@ const teamData = [
         img: jhump
     },
     {
+        id: 3,
+        name: 'Gavin Nicholson',
+        desc: 'Marketing',
+        img: gavin
+        
+    },
+    {
+        id: 2,
+        name: 'Joshua Lapidus',
+        desc: 'Operations',
+       
+        img: joshua
+    },
+    {
         id: 5,
         name: 'Bill',
-        desc: 'Solidity Developer',
-        subDesc: "Pool-Party | Peeps Democracy",
+        desc: 'Smart Contract Advisor',
         img: bill
     },
     

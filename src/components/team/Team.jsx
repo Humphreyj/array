@@ -14,6 +14,7 @@ margin: 0 auto;
 display: flex;
 justify-content: center;
 align-items: flex-start;
+padding-bottom: 60px;
 
 @media(max-width: 970px) {
     flex-direction: column;
@@ -22,7 +23,7 @@ align-items: flex-start;
 }
 @media(max-width: 500px) {
     height: 100%;
-    padding-bottom: 300px;
+    padding-bottom: 150px;
 }
 
 
