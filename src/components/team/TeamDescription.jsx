@@ -6,17 +6,17 @@ import styled from 'styled-components';
 const Description = styled.div`
 display: flex;
 flex-direction: column;
-width: 30%;
+width: 25%;
 height: 70vh;
-align-items: center;
+align-items: flex-start;
 justify-content: flex-start;
 color: white;
-margin-top: -1%;
+margin-top: -2%;
 
 
     h1 {
         font-size: 8em;
-        margin: 10px 0 0 0;
+        margin: 10% 0 0 0;
     }
     .sub-heading {
         font-size: 3em;
@@ -25,9 +25,9 @@ margin-top: -1%;
     }
     p {
         font-size: 2em;
-        text-align: center;
-        width: 65%;
-        margin: 20px auto;
+        width: 75%;
+        margin: 10px 0;
+        line-height: 32px;
         
     }
     .social {
@@ -61,10 +61,11 @@ margin-top: -1%;
     }
     @media(min-width: 2700px) {
         h1 {
-            margin-top: 6%;
+            margin-top: 10%;
         }
         p {
-            width: 50%;
+            width: 70%;
+            line-height: 38px;
         }
         .social {
             display: flex;
@@ -101,8 +102,8 @@ margin-top: -1%;
             margin-top: 6%;
         }
         p {
-            width: 70%;
-            font-size: 1.6em;
+            width: 75%;
+            font-size: 1.4em;
         }
         .social {
             display: flex;
@@ -135,23 +136,37 @@ margin-top: -1%;
             }
     }
     @media(max-width: 2556px) {
+        h1 {
+            font-size: 4.4em;
+            margin-top: 12%;
+        }
         p {
             width: 80%;
-            font-size: 1.4em;
+            font-size: 1.5em;
         }
         .social {
-            top: 10%;
+            top: 5%;
         }
     }
     //max-width: 2556px
 
     @media(max-width: 1920px) {
+        h1 {
+            font-size: 3.5em;
+            margin-top: 12%;
+        }
+        .sub-heading {
+            font-size: 2em;
+        }
         p {
             width: 80%;
-            font-size: 1.2em;
+            font-size: 1em;
         }
         .social {
             top: 8%;
+            .title {
+                font-size: 2em;
+            }
         }
     }
     //max-width: 1920px
@@ -165,49 +180,54 @@ margin-top: -1%;
     }
     //max-width: 1905px
     @media(max-width: 1440px) {
+        width: 30%;
         h1 {
-            font-size: 5em;
+            font-size: 4em;
         }
         .sub-heading {
             font-size: 1.4em;
         }
         p {
-            width: 80%;
-            font-size: 1em;
+            width: 85%;
+            font-size: .9em;
+            line-height: 24px;
         }
         .social {
-            top: 5%;
+            top:0%;
             .title {
-                font-size: 1.5em;
+                font-size: 1.2em;
             }
             .social-links {
                 margin-top: 20px;
                 .fab {
-                    font-size: 2em;
+                    font-size: 1.5em;
                 }
             }
         }
     }
     //max-width: 1440px
     @media(max-width: 1280px) {
+        
         h1 {
             font-size: 4em;
             margin-top: 15px;
         }
         p {
+            line-height: 18px;
             width: 85%;
             font-size: .9em;
+            margin-top: 5px;
         }
         .social {
             top: 0%;
             
             .title {
-                font-size: 1.5em;
+                font-size: 1.2em;
             }
             .social-links {
                 margin-top: 20px;
                 .fab {
-                    font-size: 2em;
+                    font-size: 1.6em;
                 }
             }
         }
@@ -216,8 +236,11 @@ margin-top: -1%;
     @media(max-width: 970px) {
         height: 25vh;
         width: 100%;
+        align-items: center;
+        justify-content: center;
         p {
             width: 80%;
+            text-align: center;
         }
         .social {
             display: none;
@@ -238,9 +261,14 @@ margin-top: -1%;
 
 }
     @media(max-width: 605px) {
-        height: 40vh;
+        height: 45vh;
         margin-top: 0px;
         width: 100%;
+        p {
+            line-height: 25px;
+                
+            
+        }
         
         //max-width: 600px
     }
@@ -265,27 +293,30 @@ margin-top: -1%;
     
 @media(max-width: 500px) {
     height: 18vh;
-    margin-top: 0px;
+    margin-top: 5%;
     width: 100%;
     
     }
     //max-width: 500px
 
     @media(max-width: 414px) {
-        height: 105vh;
+        height: 110vh;
+        margin-top: 0%;
        
         
     }
     //max-width: 411px
     @media(max-width: 380px) {
-        height: 115vh;
+        height: 117vh;
+        margin-top: 25%;
       
         
     }
     //max-width: 380px
 
-    @media(max-width: 380px) {
-        height: 135vh;
+    @media(max-width: 375px) {
+        height: 130vh;
+        margin-top: 1%;
       
         
     }
@@ -298,7 +329,8 @@ margin-top: -1%;
     }
     //max-width: 360px
     @media(max-width: 320px) {
-        height: 155vh;
+        height: 205vh;
+        margin-top: 0%;
     
         
     }
@@ -321,10 +353,11 @@ const TeamDescription = () => {
     return (
         <Description>
             <h1>Team</h1>
-            <h4 className='sub-heading'>array.finance</h4>
-            <p>The Array team has the experience needed to build the next generation of protocols. With experience in industry-leading companies and DeFi experience since 2017, the Array team has the knowledge to build effective and secure asset management contracts. Implementing strategies to protect against flash loans and other code oversights is our number one priority going forwards.
+            <h4 className='sub-heading'>Array.finance</h4>
+            <p>This diverse group of Ethereans came together to build [Array.Finance], a drastically better DeFi user experience. Normal people can't or won't spend 36 hours per day tinkering with their portfolio, checking in on farms, rebalancing their positions, and reallocating assets to maximize profits and mitigate catastrophes, but Array.Finance will.
                 </p>
-            <p>All code will be professionally audited by multiple parties before phases officially launch, and additional audits will be performed before pushing new code to mainnet.</p>
+            <p>The Array team has extensive experience with ["smart contracts", "data science", "front-end", "UI/UX", "Business Development", "FinTech", "TradFi", "Lego-stacking", "DeFi Lego-stacking","Citrix", "Consensys", "campaign finance", "networking", "scuba diving", "hiking"]
+                that all went into building the simplest way to capture DeFi gains while going long on tried-and-true cryptocurrencies.</p>
 
             <div className="social">
                 <h1 className="title">follow for updates</h1>
